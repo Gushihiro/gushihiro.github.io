@@ -102,7 +102,9 @@ const AboutMePage = ({ setDetailPage }:any) => {
         <p>
           As a team-oriented programmer, I believe I can be an asset to any company looking for a strong, motivated developer.
         </p>
-        <h2>Contact Me @ robinsonhiroto@gmail.com</h2>
+        <div className='contact'>
+          <h2>Contact Me @ robinsonhiroto@gmail.com</h2>
+        </div>
         <p>
           
         </p>
@@ -116,7 +118,6 @@ const AboutMePage = ({ setDetailPage }:any) => {
           Back
         </button>
       </Link>
-      <Footer />
     </motion.div>
   )
 }

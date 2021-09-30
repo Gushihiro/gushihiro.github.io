@@ -65,3 +65,17 @@
   box-shadow: 0 0px 5px white, inset 0 0 5px white;
   transform: scale(1.05)
 }
+
+@media screen and (max-width: 600px) {
+  .aboutPreview h1 {
+    font-size: 2rem;
+  }
+  .aboutPreSS {
+    width: 90vw;
+    height: 40vh;
+  }
+  .abBtn {
+    width: 10rem;
+    margin-top: 10vh;
+  }
+}

@@ -1,6 +1,6 @@
 .aboutMePage {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -18,10 +18,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
-  border-radius: 5px;
   padding: 2rem;
-  box-shadow: inset 0px 0px 5px white;
   height: 80vh;
 }
 
@@ -44,3 +41,20 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  .aboutInfo {
+    min-height: 40vh;
+    width: 90%;
+    padding: 0;
+  }
+  .aboutInfo p {
+    font-size: 1.3rem;
+    margin: .5rem 0;
+  }
+  .aboutInfo h2 {
+    font-size: 1.25rem;
+  }
+  .aboutTitle {
+    margin-bottom: -10vh;
+  }
+}

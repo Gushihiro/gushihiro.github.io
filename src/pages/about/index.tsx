@@ -42,10 +42,11 @@ export default function AboutPreview({ scrollDir, setFrameIdx, setDetailPage }: 
       y: 100
     },
     exit: {
+      scale: .7,
       opacity: 0,
-      y: 100,
+      y: -200,
       transition: {
-        duration: 1.3
+        duration: 1.5,
       }
     }
   }
