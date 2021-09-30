@@ -18,18 +18,15 @@ export default function Footer() {
     <div className="footer">
       <div className="footerCont">
         <div className="socialLinks">
-          <a href={'https://github.com/Gushihiro'} target='_blank'>
+          <a href={'https://github.com/Gushihiro'} rel="noreferrer" target='_blank'>
             <img className="footerImg" src={GitHubIcon} alt="GitHub" />
           </a>
-          <a href={'https://www.linkedin.com/in/robinsonhiroto/'} target='_blank'>
+          <a href={'https://www.linkedin.com/in/robinsonhiroto/'} rel="noreferrer" target='_blank'>
             <img className="footerImg" src={LinkedinIcon} alt="linkedIn" />
           </a>
-          <a href={'https://twitter.com/gushihiro'} target='_blank'>
+          <a href={'https://twitter.com/gushihiro'} rel="noreferrer" target='_blank'>
             <img className="footerImg" src={TwitterIcon} alt="Twitter" />
           </a>
-          <Link to={'/kinetik'}>
-            <img className='footerImg' src={HomeIcon} alt='Home' />
-          </Link>
         </div>
         <div className='copyright'>
           <p>© Copyright 2021 Hiroto Robinson | Gushihiro</p>
