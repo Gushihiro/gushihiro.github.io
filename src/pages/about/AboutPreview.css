@@ -1,0 +1,67 @@
+
+.aboutPreview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background-color: black;
+  position: relative;
+}
+
+.aboutPreview h1 {
+  font-family: 'LemonMilk-Light';
+  padding: .5rem;
+  background-color: black;
+  border-radius:10px;
+  position: absolute;
+  bottom: 30%;
+}
+
+.aboutPreview h3 {
+  position: absolute;
+  background-color: black;
+  padding: .5rem;
+  border-radius: 10px;
+  font-family: 'Kaisei-HarunoUmi-Medium';
+  top: 60%;
+  left: 55%;
+  font-size: 2.5rem;
+}
+
+.aboutPreSS {
+  width: 50vw;
+  height: 70vh;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.aboutBtn {
+  margin-top: 5vh;
+}
+
+.abBtn {
+  width: 30rem;
+  height: 4rem;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border:none;
+  font-family: 'LGCafe-Bold';
+  background-color: hsla(205, 100%, 50%, 0.014);
+  border: 1px solid white;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.abBtn:hover {
+  box-shadow: 0 0px 5px white, inset 0 0 5px white;
+  transform: scale(1.05)
+}

@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'KaiseiHarunoUmi-Medium';
+  src: local('KaiseiHarunoUmi-Bold'), url(./fonts/KaiseiHarunoUmi-Medium.ttf) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Azonix';
+  src: local('Azonix'), url(./fonts/Azonix.otf) format('opentype');
 }
+
+@font-face {
+  font-family: 'LemonMilk-Med';
+  src: local('LemonMilk'), url(./fonts/LEMONMILK-Medium.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'LemonMilk-Reg';
+  src: local('LemonMilk'), url(./fonts/LEMONMILK-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'LemonMilk-Light';
+  src: local('LemonMilk'), url(./fonts/LEMONMILK-Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'LGCafe';
+  src: local('LGCafe'), url(./fonts/Louis\ George\ Cafe.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'LGCafe-Bold';
+  src: local('LGCafe'), url(./fonts/Louis\ George\ Cafe\ Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Elysian';
+  src: local('Elysian-Fields'), url(./fonts/Elysian\ Fields.otf) format('opentype');
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+* {
+  scrollbar-width: none;
+  font-family: 'LemonMilk-Light', serif;
+  margin: 0;
+}
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+  color: white;
+  background-color: black;
+}
+
+.project {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  
+}
+
+.spacer2 {
+  width: 100%;
+  height: 10%;
+  background-image: url('./images/wavetopspacer.svg');
+  position: relative;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: center;
+}
+
+.typeText {
+  background-color: rgba(0, 0, 0, 0.884);
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px hsl(205, 100%, 50%);
+  padding: 2rem;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px rgb(76, 165, 201);
+  margin-top: 5vh;
+  background-color: rgba(0, 0, 0, 0.884);
+  color: white;
+}
+
+

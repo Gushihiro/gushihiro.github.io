@@ -1,0 +1,93 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  scroll-snap-align: start;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.userName {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:30vw;
+}
+
+.userName h1 {
+  margin: 1vh 0;
+  color:rgb(0, 0, 0);
+  font-size: 6rem;
+  font-family: 'Azonix';
+}
+
+.userName h3 {
+  text-align: left;
+  margin: 1vh 0;
+  margin-left: -1vw;
+  color: black;
+  width: 35vw;
+  font-family: 'Elysian';
+  font-size: 2.15rem;
+}
+
+.logoDiv {
+  width: 20%;
+  height: 20%;
+  position: relative;
+}
+
+.mainLogo {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 30px rgb(13, 91, 128);
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0);
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.logoText {
+  position: absolute;
+  z-index: 1;
+  top: 130%;
+  right: -1vw;
+  color:rgb(255, 255, 255);
+  font-size: 4rem;
+  font-family: 'Azonix';
+  -webkit-text-stroke: .1rem rgb(13, 91, 128);
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    height: 70vh;
+  }
+  .logoDiv {
+    width: 60%;
+    height: 50%;
+  }
+  .mainLogo {
+    margin: 0;
+    box-shadow: 0 0 15px rgb(13, 91, 128);
+    margin-top: -10%;
+  }
+  .userName {
+    width: 100vw;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .userName h1 {
+    font-size: 4rem;
+  }
+  .userName h3 {
+    font-size: 1.15rem;
+    text-align: center;
+    margin-left: 0;
+  }
+}

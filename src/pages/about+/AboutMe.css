@@ -1,0 +1,46 @@
+.aboutMePage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.75rem;
+  color: white;
+  background-color: black;
+  scroll-behavior: auto;
+  overflow-y:auto;
+}
+
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: inset 0px 0px 5px white;
+  height: 80vh;
+}
+
+.aboutTitle {
+  margin-bottom: -5.25vh;
+  background-color: black;
+  z-index: 2;
+  padding: 1rem;
+}
+
+.aboutInfo p {
+  font-family: 'LGcafe';
+  margin: 2rem;
+}
+
+.aboutBack {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+

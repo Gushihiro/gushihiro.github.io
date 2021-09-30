@@ -1,0 +1,64 @@
+
+.proj3 {
+  padding-left: 20vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  position: relative;
+}
+
+.proj3 h1 {
+  font-family: 'LemonMilk-Reg';
+  padding: .5rem;
+  background-color: black;
+  position: absolute;
+  top: 70%;
+  left: 9%;
+  border-radius:10px;
+}
+
+.proj3 h3 {
+  position: absolute;
+  background-color: black;
+  padding: .5rem;
+  border-radius: 10px;
+  font-family: 'LGCafe';
+  top: 55%;
+  left: 52%;
+  font-size: 2.5rem;
+}
+
+.ouiSS {
+  width: 50vw;
+  height: 70vh;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.proj3Info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 1vw;
+  padding-top: 10vh;
+  width: 50vw;
+  height: 10vh;
+  position: absolute;
+  top: 76%;
+  left: 20%;
+}
+
+.proj3Info h4 {
+  font-family: 'LGCafe';
+  margin-left: 2vw;
+  color: white;
+}
+
+.proj3Btn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  height: 30vh;
+  justify-content: space-between;
+}
