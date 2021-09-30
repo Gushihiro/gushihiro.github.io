@@ -27,7 +27,7 @@ export default function Footer() {
           <a href={'https://twitter.com/gushihiro'} target='_blank'>
             <img className="footerImg" src={TwitterIcon} alt="Twitter" />
           </a>
-          <Link to={'/'}>
+          <Link to={'/kinetik'}>
             <img className='footerImg' src={HomeIcon} alt='Home' />
           </Link>
         </div>
