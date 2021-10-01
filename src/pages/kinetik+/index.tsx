@@ -266,7 +266,6 @@ const KinetikPage = ({ setDetailPage }:any) => {
           </div>
         </div>
       </div>
-      <Footer />
     </motion.div>
   )
 }

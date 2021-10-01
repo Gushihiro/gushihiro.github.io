@@ -31,6 +31,7 @@
   min-height: 200vh;
   width: 100vw;
   background-color: white;
+  border-bottom: .5rem solid black;
 }
 
 .kinetikDetail h1 {
@@ -142,4 +143,43 @@
   border-radius: 5px;
   width: 70%;
   box-shadow: 0 0 5px black;
+}
+
+@media screen and (max-width: 400px) {
+  .kinetikDetail {
+    width: 98vw;
+  }
+  .backBtn {
+    right: 2%;
+    top: 20%;
+  }
+  .kinetikDetail h1 {
+    font-size: 3rem;
+  }
+  .kinetikInfo h1 {
+    font-size: 2.5rem;
+  }
+  .kinetikInfo li {
+    font-size: 1.5rem;
+  }
+  .kinetikGoal h2 {
+    font-size: 3rem;
+  }
+  .goalDiv {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .goalSnip, .goalSnip2, .goalSnip3 {
+    width: 80%;
+  }
+  .kinetikCal h2 {
+    font-size: 3rem;
+  }
+  .kinetikCal p {
+    font-size: 1.25rem;
+  }
+  .calendarMisc {
+    width: 90%;
+    border: .15rem solid black;
+  }
 }

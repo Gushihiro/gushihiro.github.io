@@ -112,6 +112,7 @@
     margin: none;
     bottom: 0;
     left: 5%;
+    align-items: center;
   }
   .proj1Info h4 {
     font-size: 1.25rem;
@@ -119,8 +120,10 @@
   }
   .btn {
     width: 10rem;
+    margin-bottom: 1vh;
   }
   .proj1Btn {
     margin: 0;
+    justify-content: flex-start;
   }
 }
