@@ -61,3 +61,39 @@
   height: 30vh;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 400px) {
+  .proj2 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0;
+    width: 100vw;
+  }
+  .proj2 h1 {
+    top: 45%;
+    left: -1%;
+    width: 100vw;
+  }
+  .proj2 h3 {
+    font-size: 2rem;
+    top: 40%;
+    right: 0;
+  }
+  .crudSS {
+    width: 90vw;
+    height: 40vh;
+    margin-top: 12vh;
+  }
+  .proj2Info {
+    left: 7.5%;
+    top: 80%;
+  }
+  .proj2Info h4 {
+    font-size: 1.25rem;
+  }
+  .proj2Btn {
+    margin: 0;
+    margin-top: 20vh;
+    justify-content: flex-start;
+  }
+}
