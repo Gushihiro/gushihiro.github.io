@@ -167,7 +167,7 @@ export default function Project2({ scrollDir, setDetailPage }: any) {
         <h4>NodeJS </h4>
       </motion.div>
       <div className='proj2Btn'>
-      <Link to={`/contacts-crud+`}>
+      <Link to={`/project/contacts-crud+`}>
         <motion.button 
           variants={btnAni}
           initial={"hidden"}
@@ -195,17 +195,18 @@ export default function Project2({ scrollDir, setDetailPage }: any) {
       >
         Web App
       </motion.h3>
-      <motion.img 
-        variants={ssAni}
-        initial={"hidden"} 
-        animate={"visible"}
-        exit={"exit"}
-        className='crudSS' 
-        src={ScreenShot} 
-        alt='Contact CRUD' 
-        onClick={()=>setDetailPage(true)}
-      />
-      
+      <Link to={`/project/contacts-crud+`}>
+        <motion.img 
+          variants={ssAni}
+          initial={"hidden"} 
+          animate={"visible"}
+          exit={"exit"}
+          className='crudSS' 
+          src={ScreenShot} 
+          alt='Contact CRUD' 
+          onClick={()=>setDetailPage(true)}
+        />
+      </Link>
     </motion.div>
   )
 }

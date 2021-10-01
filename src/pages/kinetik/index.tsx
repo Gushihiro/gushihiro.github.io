@@ -171,7 +171,7 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
       >
         Web App
       </motion.h3>
-      <Link to={`/kinetik+`}>
+      <Link to={`/project/kinetik+`}>
         <motion.img 
           key={8}
           variants={ssAni}
@@ -185,7 +185,7 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
         />
       </Link>
       <div className='proj1Btn'>
-        <Link to={`/kinetik+`}>
+        <Link to={`/project/kinetik+`}>
           <motion.button
             key={10}
             variants={btnAni}

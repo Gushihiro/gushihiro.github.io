@@ -24,56 +24,56 @@ export default function ComponentCarousel({ scrollDir, setFrameIdx, setDetailPag
       exitBeforeEnter
     >
       <Switch location={location} key={location.pathname}>
-        <Route path='/vedomy+'>
+        <Route path='/project/vedomy+'>
           <VedomyDetails 
             setDetailPage={setDetailPage}
           />
         </Route>
-        <Route path='/vedomy'>
+        <Route path='/project/vedomy'>
           <Project4
             setDetailPage={setDetailPage}
             scrollDir={scrollDir}
           />
         </Route>
-        <Route path='/ouicircles+'>
+        <Route path='/project/ouicircles+'>
           <OuiCirclesDetails 
             setDetailPage={setDetailPage}
           />
         </Route>
-        <Route path='/ouicircles'>
+        <Route path='/project/ouicircles'>
           <Project3
           setDetailPage={setDetailPage}
             scrollDir={scrollDir}
           />
         </Route>
-        <Route path='/contacts-crud+'>
+        <Route path='/project/contacts-crud+'>
           <CrudDetails 
             setDetailPage={setDetailPage}
           />
         </Route>
-        <Route path='/contacts-crud'>
+        <Route path='/project/contacts-crud'>
           <Project2
             setDetailPage={setDetailPage}
             scrollDir={scrollDir}
           />
         </Route>
-        <Route path='/kinetik+'>
+        <Route path='/project/kinetik+'>
           <KinetikDetails 
             setDetailPage={setDetailPage}
           />
         </Route>
-        <Route path='/kinetik'>
+        <Route path='/project/kinetik'>
           <Project1
             setDetailPage={setDetailPage}
             scrollDir={scrollDir}
           />
         </Route>
-        <Route path='/about+'>
+        <Route path='/project/about+'>
           <AboutDetails 
             setDetailPage={setDetailPage}
           />
         </Route>
-        <Route path='/about'>
+        <Route path='/project/about'>
           <AboutPreview
             scrollDir={scrollDir}
             setDetailPage={setDetailPage}

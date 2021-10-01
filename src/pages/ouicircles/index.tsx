@@ -168,7 +168,7 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
       >
         Event Forum
       </motion.h3>
-      <Link to={'/ouicircles+'}>
+      <Link to={'/project/ouicircles+'}>
         <motion.img 
           variants={ssAni}
           initial={"hidden"} 
@@ -181,7 +181,7 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
         />
       </Link>
       <div className='proj3Btn'>
-      <Link to={`/ouicircles+`}>
+      <Link to={`/project/ouicircles+`}>
         <motion.button 
           variants={btnAni}
           initial={"hidden"}

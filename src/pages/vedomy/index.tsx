@@ -169,7 +169,7 @@ export default function Project4({ scrollDir, setDetailPage }: any) {
         <h4>NodeJS</h4>
       </motion.div>
       <div className='proj4Btn'>
-        <Link to={`/vedomy+`}>
+        <Link to={`/project/vedomy+`}>
           <motion.button 
             variants={btnAni}
             initial={"hidden"}
@@ -199,16 +199,18 @@ export default function Project4({ scrollDir, setDetailPage }: any) {
       >
         Web App
       </motion.h3>
-      <motion.img 
-        variants={ssAni}
-        initial={"hidden"} 
-        animate={"visible"}
-        exit={"exit"}
-        className='vedomySS' 
-        src={ScreenShot} 
-        alt='Vedomy'
-        onClick={()=>setDetailPage(true)}
-      />
+      <Link to={`/project/vedomy+`}>
+        <motion.img 
+          variants={ssAni}
+          initial={"hidden"} 
+          animate={"visible"}
+          exit={"exit"}
+          className='vedomySS' 
+          src={ScreenShot} 
+          alt='Vedomy'
+          onClick={()=>setDetailPage(true)}
+        />
+      </Link>
     </motion.div>
   )
 }

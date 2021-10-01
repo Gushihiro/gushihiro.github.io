@@ -158,7 +158,7 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
             <h4>NodeJS </h4>
         </motion.div>
         <div className='proj2Btn'>
-          <Link to={`https://gushihiro.github.io/contacts-crud/`} target='_blank'>
+          <a href={`https://gushihiro.github.io/contacts-crud/`} rel="noreferrer" target='_blank'>
             <motion.button
               variants={btnAni}
               initial={"hidden"}
@@ -169,8 +169,8 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
             >
               View Site
             </motion.button>
-          </Link>
-          <Link to={`https://github.com/Gushihiro/contacts-crud`} target='_blank'>
+          </a>
+          <a href={`https://github.com/Gushihiro/contacts-crud`} rel="noreferrer" target='_blank'>
             <motion.button
               variants={btnAni}
               initial={"hidden"}
@@ -180,7 +180,7 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
             >
               View GitHub
             </motion.button>
-          </Link>
+          </a>
         </div>
         <motion.h1
           variants={h1Ani}
@@ -198,7 +198,7 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
         >
           Web App
         </motion.h3>
-        <Link to={`/contacts-crud`}>
+        <Link to={`/project/contacts-crud`}>
           <button 
             className='backBtn2' 
             type='button'
@@ -207,7 +207,7 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
             Back
           </button>
         </Link>
-        <Link to={`https://gushihiro.github.io/contacts-crud/`} target='_blank'>
+        <a href={`https://gushihiro.github.io/contacts-crud/`} rel='noreferrer' target='_blank'>
           <motion.img
             variants={ssAni}
             initial={"hidden"} 
@@ -217,7 +217,7 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
             src={ScreenShot} 
             alt='Contacts-CRUD' 
           />
-        </Link>
+        </a>
         
       </div>
       <div className='crudDetail'>

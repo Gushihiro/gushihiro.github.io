@@ -158,7 +158,7 @@ const ouiCirclesPage = ({ setDetailPage }:any) => {
         >
           Event Forum
         </motion.h3>
-        <Link to={`/ouicircles`}>
+        <Link to={`/project/ouicircles`}>
           <button 
             className='backBtn' 
             type='button'
