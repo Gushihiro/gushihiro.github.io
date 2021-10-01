@@ -30,7 +30,7 @@ const IndexPage = () => {
   const [frameIdx, setFrameIdx] = useState(0)
   const [scrollDir, setScrollDir] = useState("none")
   const [detailPage, setDetailPage] = useState(false)
-
+  const history = useHistory();
 
   const handleIncrement = () => {
     setScrollDir("down")
@@ -51,6 +51,10 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
+    window.addEventListener("beforeunload", function (event) {
+      event.preventDefault()
+      history.push('/')
+  })
   }, [frameIdx])
 
   return (
