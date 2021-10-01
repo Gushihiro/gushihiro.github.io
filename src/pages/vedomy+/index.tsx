@@ -13,7 +13,7 @@ const VedomyPage = ({ setDetailPage }:any) => {
 
   const h1Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
         duration: 2,
@@ -21,33 +21,35 @@ const VedomyPage = ({ setDetailPage }:any) => {
       }
     },
     hidden: {
-      x: 400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: 100,
+      y: -150,
+      scale: .7,
       opacity: 0,
       transition: {
-        duration: 1
+        duration: 1.5,
+        delay: .5
       }
     }
   }
 
   const h3Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: .5
+        duration: 1.5,
+        delay: 1.75
       }
     },
     hidden: {
-      x: -400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: -100,
+      y: 100,
       opacity: 0,
       transition: {
         duration: 1
@@ -141,7 +143,22 @@ const VedomyPage = ({ setDetailPage }:any) => {
       className='vedomyPage'
     >
       <div className='project proj4'>
-        <div className='proj4Btn'>
+        <motion.div 
+          variants={stackAni}
+          initial={"hidden"}
+          animate={"visible"}
+          exit={"exit"}
+          className='proj4Info'
+        >
+          <h4>MySQL </h4>
+          <h4>|</h4>
+          <h4>Express </h4>
+          <h4>|</h4>
+          <h4>JavaScript </h4>
+          <h4>|</h4>
+          <h4>NodeJS</h4>
+        </motion.div>
+        <div className='vedomy4Btn'>
           <Link to={`https://gushihiro.github.io/Vedomy/`} target='_blank'>
           <motion.button
             variants={btnAni}
@@ -202,21 +219,6 @@ const VedomyPage = ({ setDetailPage }:any) => {
             alt='Vedomy' 
           />
         </Link>
-        <motion.div 
-          variants={stackAni}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-          className='proj4Info'
-        >
-          <h4>MySQL </h4>
-          <h4>|</h4>
-          <h4>Express </h4>
-          <h4>|</h4>
-          <h4>JavaScript </h4>
-          <h4>|</h4>
-          <h4>NodeJS</h4>
-        </motion.div>
       </div>
       <div className='vedomyDetail'>
         <img className='vedomyDesktop' src={DesktopView} alt='Desktop'/>
@@ -234,7 +236,6 @@ const VedomyPage = ({ setDetailPage }:any) => {
             <p>Track your mood, meditate using the animated breathing box, and receive new recipes, yoga poses, and motivational quotes daily.</p>
           </div>
         </div>
-        <Footer />
       </div>
     </motion.div>
   )

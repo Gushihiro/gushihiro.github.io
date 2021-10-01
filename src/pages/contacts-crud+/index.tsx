@@ -13,7 +13,7 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
 
   const h1Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
         duration: 2,
@@ -21,33 +21,35 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
       }
     },
     hidden: {
-      x: 400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: 100,
+      y: -150,
+      scale: .7,
       opacity: 0,
       transition: {
-        duration: 1
+        duration: 1.5,
+        delay: .5
       }
     }
   }
 
   const h3Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: .5
+        duration: 1.5,
+        delay: 1.75
       }
     },
     hidden: {
-      x: -400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: -100,
+      y: 100,
       opacity: 0,
       transition: {
         duration: 1
@@ -140,6 +142,21 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
       className='contactcrudPage'
     >
       <div className='project proj2'>
+        <motion.div 
+          variants={stackAni}
+          initial={"hidden"}
+          animate={"visible"}
+          exit={"exit"}
+          className='proj2Info'
+        >
+            <h4>MySQL </h4>
+            <h4>|</h4>
+            <h4>Express </h4>
+            <h4>|</h4>
+            <h4>React </h4>
+            <h4>|</h4>
+            <h4>NodeJS </h4>
+        </motion.div>
         <div className='proj2Btn'>
           <Link to={`https://gushihiro.github.io/contacts-crud/`} target='_blank'>
             <motion.button
@@ -201,21 +218,7 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
             alt='Contacts-CRUD' 
           />
         </Link>
-        <motion.div 
-          variants={stackAni}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-          className='proj2Info'
-        >
-            <h4>MySQL </h4>
-            <h4>|</h4>
-            <h4>Express </h4>
-            <h4>|</h4>
-            <h4>React </h4>
-            <h4>|</h4>
-            <h4>NodeJS </h4>
-        </motion.div>
+        
       </div>
       <div className='crudDetail'>
         <img className='crudDesktop' src={DesktopView} alt='Desktop'/>
@@ -233,7 +236,6 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
           </div>
         </div>
       </div>
-      <Footer />
     </motion.div>
   )
 }

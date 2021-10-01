@@ -66,9 +66,10 @@
   transform: scale(1.05)
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .aboutPreview h1 {
     font-size: 2rem;
+    bottom: 35%;
   }
   .aboutPreSS {
     width: 90vw;

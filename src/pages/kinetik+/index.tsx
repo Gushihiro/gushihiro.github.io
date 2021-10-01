@@ -24,7 +24,7 @@ const KinetikPage = ({ setDetailPage }:any) => {
 
   const h1Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
         duration: 2,
@@ -32,33 +32,35 @@ const KinetikPage = ({ setDetailPage }:any) => {
       }
     },
     hidden: {
-      x: -400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: -100,
+      y: -150,
+      scale: .7,
       opacity: 0,
       transition: {
-        duration: 1
+        duration: 1.5,
+        delay: .5
       }
     }
   }
 
   const h3Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: .5
+        duration: 1.5,
+        delay: 1.75
       }
     },
     hidden: {
-      x: 400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: 100,
+      y: 100,
       opacity: 0,
       transition: {
         duration: 1
@@ -190,22 +192,8 @@ const KinetikPage = ({ setDetailPage }:any) => {
             alt='Kinetik' 
           />
         </Link>
-        <motion.div 
-          variants={stackAni}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-          className='proj1Info'
-        >
-          <h4>MySQL </h4>
-          <h4>|</h4>
-          <h4>Express </h4>
-          <h4>|</h4>
-          <h4>React </h4>
-          <h4>|</h4>
-          <h4>NodeJS </h4>
-        </motion.div>
-        <div className='proj1Btn'>
+        
+        <div className='kinetik1Btn'>
           <Link to={`http://kinetikapp.herokuapp.com/`} target='_blank'>
             <motion.button
               variants={btnAni}
@@ -230,6 +218,21 @@ const KinetikPage = ({ setDetailPage }:any) => {
             </motion.button>
           </Link>
         </div>
+        <motion.div 
+          variants={stackAni}
+          initial={"hidden"}
+          animate={"visible"}
+          exit={"exit"}
+          className='proj1Info'
+        >
+          <h4>MySQL </h4>
+          <h4>|</h4>
+          <h4>Express </h4>
+          <h4>|</h4>
+          <h4>React </h4>
+          <h4>|</h4>
+          <h4>NodeJS </h4>
+        </motion.div>
       </div>
       <div className='kinetikDetail'>
         <img className='kinetikDesktop' src={DesktopView} alt='Desktop'/>

@@ -9,7 +9,7 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
 
   const h1Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
         duration: 2,
@@ -17,33 +17,35 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
       }
     },
     hidden: {
-      x: -400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: -100,
+      y: -150,
+      scale: .7,
       opacity: 0,
       transition: {
-        duration: 1
+        duration: 1.5,
+        delay: .5
       }
     }
   }
 
   const h3Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: .5
+        duration: 1.5,
+        delay: 1.75
       }
     },
     hidden: {
-      x: 400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: 100,
+      y: 100,
       opacity: 0,
       transition: {
         duration: 1
@@ -164,7 +166,7 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
         animate={"visible"}
         exit={"exit"}
       >
-        Community Forum
+        Event Forum
       </motion.h3>
       <Link to={'/ouicircles+'}>
         <motion.img 
@@ -178,21 +180,6 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
           onClick={()=>setDetailPage(true)}
         />
       </Link>
-      <motion.div 
-        variants={stackAni}
-        initial={"hidden"}
-        animate={"visible"}
-        exit={"exit"}
-        className='proj3Info'
-      >
-        <h4>MySQL </h4>
-        <h4>|</h4>
-        <h4>Express </h4>
-        <h4>|</h4>
-        <h4>Handlebars </h4>
-        <h4>|</h4>
-        <h4>NodeJS </h4>
-      </motion.div>
       <div className='proj3Btn'>
       <Link to={`/ouicircles+`}>
         <motion.button 
@@ -208,6 +195,21 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
         </motion.button>
       </Link>
       </div>
+      <motion.div 
+        variants={stackAni}
+        initial={"hidden"}
+        animate={"visible"}
+        exit={"exit"}
+        className='proj3Info'
+      >
+        <h4>MySQL </h4>
+        <h4>|</h4>
+        <h4>Express </h4>
+        <h4>|</h4>
+        <h4>Handlebars </h4>
+        <h4>|</h4>
+        <h4>NodeJS </h4>
+      </motion.div>
     </motion.div>
   )
 }

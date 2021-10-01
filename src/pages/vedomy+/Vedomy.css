@@ -34,6 +34,14 @@
   background-color: white;
 }
 
+.vedomy4Btn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  height: 30vh;
+  justify-content: space-between;
+}
+
 .vedomyDetail h1 {
   margin-top: 10vh;
   color: black;
@@ -93,4 +101,39 @@
   border-radius: 5px;
   box-shadow: 0 0 5px black;
   width: 80%;
+}
+
+@media screen and (max-width: 450px) {
+  .vedomyDetail {
+    width: 98vw;
+  }
+  .backBtn2 {
+    right: 3%;
+    top: 9%;
+  }
+  .vedomy4Btn {
+    margin: 0;
+    margin-top: 10vh;
+    justify-content: flex-start;
+    height: 10vh;
+  }
+  .vedomyDetail h1 {
+    font-size: 3rem;
+  }
+  .vedomyInfo h1 {
+    font-size: 2.5rem;
+  }
+  .vedomyInfo h2 {
+    font-size: 2.5rem;
+  }
+  .vedomyInfo li {
+    font-size: 1.5rem;
+  }
+  .vedomyInfo p {
+    font-size: 1.75rem;
+  }
+  .vedomyMisc {
+    border: none;
+    box-shadow: none;
+  }
 }

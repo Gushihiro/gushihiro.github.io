@@ -13,7 +13,7 @@ const ouiCirclesPage = ({ setDetailPage }:any) => {
 
   const h1Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
         duration: 2,
@@ -21,33 +21,35 @@ const ouiCirclesPage = ({ setDetailPage }:any) => {
       }
     },
     hidden: {
-      x: -400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: -100,
+      y: -150,
+      scale: .7,
       opacity: 0,
       transition: {
-        duration: 1
+        duration: 1.5,
+        delay: .5
       }
     }
   }
 
   const h3Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: .5
+        duration: 1.5,
+        delay: 1.75
       }
     },
     hidden: {
-      x: 400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: 100,
+      y: 100,
       opacity: 0,
       transition: {
         duration: 1
@@ -154,7 +156,7 @@ const ouiCirclesPage = ({ setDetailPage }:any) => {
           animate={"visible"}
           exit={"exit"}
         >
-          Community Forum
+          Event Forum
         </motion.h3>
         <Link to={`/ouicircles`}>
           <button 
@@ -165,7 +167,7 @@ const ouiCirclesPage = ({ setDetailPage }:any) => {
             Back
           </button>
         </Link>
-        <Link to={'http://oui-circle-app.herokuapp.com/'} target='_blank'>
+        <a href={'http://oui-circle-app.herokuapp.com/'} target='_blank'>
           <motion.img
             variants={ssAni}
             initial={"hidden"} 
@@ -175,7 +177,33 @@ const ouiCirclesPage = ({ setDetailPage }:any) => {
             src={ScreenShot} 
             alt='ouiCircles' 
           />
+        </a>
+        
+        <div className='circles3Btn'>
+        <a href={`http://oui-circle-app.herokuapp.com/`} target='_blank'>
+        <motion.button
+          variants={btnAni}
+          initial={"hidden"}
+          animate={"visible"}
+          exit={"exit"}
+          className='btn' 
+          type='button'
+        >
+          View Site
+        </motion.button>
+        </a>
+        <Link to={`https://github.com/Gushihiro/ouiCircles-Community-Bulletin`} target='_blank'>
+        <motion.button
+          variants={btnAni}
+          initial={"hidden"}
+          animate={"visible"}
+          exit={"exit"}
+          className='btn'
+        >
+          View GitHub
+        </motion.button>
         </Link>
+        </div>
         <motion.div 
           variants={stackAni}
           initial={"hidden"}
@@ -191,35 +219,10 @@ const ouiCirclesPage = ({ setDetailPage }:any) => {
           <h4>|</h4>
           <h4>NodeJS </h4>
         </motion.div>
-        <div className='proj3Btn'>
-        <Link to={`http://oui-circle-app.herokuapp.com/`} target='_blank'>
-        <motion.button
-          variants={btnAni}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-          className='btn' 
-          type='button'
-        >
-          View Site
-        </motion.button>
-        </Link>
-        <Link to={`https://github.com/Gushihiro/ouiCircles-Community-Bulletin`} target='_blank'>
-        <motion.button
-          variants={btnAni}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-          className='btn'
-        >
-          View GitHub
-        </motion.button>
-        </Link>
-        </div>
       </div>
       <div className='circlesDetail'>
         <img className='circlesDesktop' src={DesktopView} alt='Desktop'/>
-        <h1>Community Forum Utilizing Geospatial Data to Provide Local Events to Users</h1>
+        <h1>Community Event Forum Utilizing Geospatial Data to Provide Local Events to Users</h1>
         <img className='ouiSSpage' src={ScreenShotPage} alt='Contacts CRUD' />
         <div className='ouiInfo'>
           <h1>Additional Technologies:</h1>
@@ -238,7 +241,6 @@ const ouiCirclesPage = ({ setDetailPage }:any) => {
           </div>
         </div>
       </div>
-      <Footer />
     </motion.div>
   )
 }

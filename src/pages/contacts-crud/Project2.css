@@ -62,7 +62,7 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .proj2 {
     flex-direction: column-reverse;
     justify-content: center;
@@ -73,27 +73,34 @@
     top: 45%;
     left: -1%;
     width: 100vw;
+    z-index: 10;
   }
   .proj2 h3 {
     font-size: 2rem;
-    top: 40%;
-    right: 0;
+    top: 39%;
+    right: 3%;
+    height: 4rem;
   }
   .crudSS {
     width: 90vw;
     height: 40vh;
-    margin-top: 12vh;
+    margin-top: 5vh;
   }
   .proj2Info {
-    left: 7.5%;
-    top: 80%;
+    margin-right: 0;
+    position: static;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
   }
   .proj2Info h4 {
     font-size: 1.25rem;
+    margin: none;
   }
   .proj2Btn {
     margin: 0;
-    margin-top: 20vh;
+    margin-top: 10vh;
     justify-content: flex-start;
+    height: 5vh;
   }
 }

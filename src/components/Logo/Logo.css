@@ -62,7 +62,7 @@
   -webkit-text-stroke: .1rem rgb(13, 91, 128);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .wrapper {
     flex-direction: column;
     height: 70vh;
@@ -86,8 +86,9 @@
     font-size: 4rem;
   }
   .userName h3 {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-left: 0;
+    width: 100vw;
   }
 }

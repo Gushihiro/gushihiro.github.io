@@ -32,6 +32,7 @@
   min-height: 200vh;
   width: 100vw;
   background-color: white;
+  border-bottom: .5rem solid black;
 }
 
 .crudDetail h1 {
@@ -92,4 +93,20 @@
   padding: 4rem;
   margin-bottom: 10vh;
   box-shadow: 0 0 5px black;
+}
+
+@media screen and (max-width: 450px) {
+  .crudDetail {
+    width: 98vw;
+  }
+  .crudDetail h1 {
+    font-size: 3rem;
+  }
+  .crudInfo h1 {
+    font-size: 2.5rem;
+  }
+  .crudMisc {
+    border: none;
+    box-shadow: none;
+  }
 }

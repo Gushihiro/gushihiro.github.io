@@ -66,7 +66,7 @@
   width: 5rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .navMini {
     display: none;
   }

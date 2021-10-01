@@ -16,6 +16,7 @@
   top: 30%;
   left: 10%;
   border-radius:10px;
+  z-index: 10;
 }
 
 .proj1 h3 {
@@ -84,7 +85,7 @@
   
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .proj1 {
     flex-direction: column;
     justify-content: center;
@@ -99,21 +100,22 @@
     width: 100vw;
   }
   .proj1 h3 {
-    padding: .5rem;
-    top: 40%;
+    top: 39%;
     left: 3%;
     font-size: 2rem;
+    height: 4rem;
   }
   .kinetikSS {
-    margin-top: 10vh;
+    margin-top: 5vh;
     width: 90vw;
     height: 40vh;
   }
   .proj1Info {
-    margin: none;
-    bottom: 0;
-    left: 5%;
+    margin-left: 0;
+    position: static;
+    justify-content: center;
     align-items: center;
+    width: 90vw;
   }
   .proj1Info h4 {
     font-size: 1.25rem;
@@ -127,5 +129,6 @@
     margin: 0;
     margin-top: 10vh;
     justify-content: flex-start;
+    height: 5vh;
   }
 }

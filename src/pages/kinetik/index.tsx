@@ -10,7 +10,7 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
 
   const h1Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
         duration: 2,
@@ -18,33 +18,35 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
       }
     },
     hidden: {
-      x: -400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: -100,
+      y: -150,
+      scale: .7,
       opacity: 0,
       transition: {
-        duration: 1
+        duration: 1.5,
+        delay: .5
       }
     }
   }
 
   const h3Ani = {
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       transition: {
-        duration: 2,
-        delay: .5
+        duration: 1.5,
+        delay: 1.75
       }
     },
     hidden: {
-      x: 400,
+      y: 100,
       opacity: 0
     },
     exit: {
-      x: 100,
+      y: 100,
       opacity: 0,
       transition: {
         duration: 1
@@ -80,7 +82,7 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
       opacity: 1,
       transition: {
         duration: 1.5,
-        delay: 1.3
+        delay: 1.75
       }
     },
     hidden: {
@@ -182,6 +184,22 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
           onClick={()=>setDetailPage(true)}
         />
       </Link>
+      <div className='proj1Btn'>
+        <Link to={`/kinetik+`}>
+          <motion.button
+            key={10}
+            variants={btnAni}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"}
+            className='btn' 
+            type='button'
+            onClick={()=>setDetailPage(true)}
+            >
+            Details
+        </motion.button>
+        </Link>
+      </div>
       <motion.div 
         key={9}
         variants={stackAni}
@@ -198,22 +216,7 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
         <h4>|</h4>
         <h4>NodeJS </h4>
       </motion.div>
-      <div className='proj1Btn'>
-      <Link to={`/kinetik+`}>
-        <motion.button
-          key={10}
-          variants={btnAni}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-          className='btn' 
-          type='button'
-          onClick={()=>setDetailPage(true)}
-        >
-          Details
-      </motion.button>
-      </Link>
-      </div>
+      
     </motion.div>
   )
 }

@@ -120,7 +120,7 @@ export default function Logo() {
           animate={"visible"}
           exit={"exit"}
         >
-          Full Stack Web Developer
+          Software Engineer
         </motion.h3>
       </div>
       <motion.div
