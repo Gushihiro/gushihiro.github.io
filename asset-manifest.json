@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ccdfec9.chunk.css",
+    "main.css": "/static/css/main.89959973.chunk.css",
     "main.js": "/static/js/main.5fbff6e2.chunk.js",
     "main.js.map": "/static/js/main.5fbff6e2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.77a88ee2.js",
@@ -10,7 +10,7 @@
     "static/js/3.4cb043e2.chunk.js": "/static/js/3.4cb043e2.chunk.js",
     "static/js/3.4cb043e2.chunk.js.map": "/static/js/3.4cb043e2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.3ccdfec9.chunk.css.map": "/static/css/main.3ccdfec9.chunk.css.map",
+    "static/css/main.89959973.chunk.css.map": "/static/css/main.89959973.chunk.css.map",
     "static/js/2.acd3bba4.chunk.js.LICENSE.txt": "/static/js/2.acd3bba4.chunk.js.LICENSE.txt",
     "static/media/AboutImgSS.e518aaa8.jpg": "/static/media/AboutImgSS.e518aaa8.jpg",
     "static/media/index.css": "/static/media/wavetopspacer.22e6458f.svg",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.77a88ee2.js",
     "static/js/2.acd3bba4.chunk.js",
-    "static/css/main.3ccdfec9.chunk.css",
+    "static/css/main.89959973.chunk.css",
     "static/js/main.5fbff6e2.chunk.js"
   ]
 }
