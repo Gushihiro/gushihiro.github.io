@@ -51,10 +51,6 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    window.addEventListener("beforeunload", function (event) {
-      event.preventDefault()
-      history.push('/')
-  })
   }, [frameIdx])
 
   return (

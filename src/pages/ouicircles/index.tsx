@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import './Project3.css'
+import '.3.css'
 // @ts-ignore
 import ScreenShot from '../../images/ouicirclesscreenshot.png'
 
@@ -168,7 +168,7 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
       >
         Event Forum
       </motion.h3>
-      <Link to={'/project/ouicircles+'}>
+      <Link to={'/ouicircles+'}>
         <motion.img 
           variants={ssAni}
           initial={"hidden"} 
@@ -181,7 +181,7 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
         />
       </Link>
       <div className='proj3Btn'>
-      <Link to={`/project/ouicircles+`}>
+      <Link to={`/ouicircles+`}>
         <motion.button 
           variants={btnAni}
           initial={"hidden"}

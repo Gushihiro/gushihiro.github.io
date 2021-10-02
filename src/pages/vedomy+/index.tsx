@@ -199,7 +199,7 @@ const VedomyPage = ({ setDetailPage }:any) => {
         >
           Web App
         </motion.h3>
-        <Link to={`/project/vedomy`}>
+        <Link to={`/vedomy`}>
           <button 
             className='backBtn2' 
             type='button'

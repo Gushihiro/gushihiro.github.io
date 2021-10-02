@@ -198,7 +198,7 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
         >
           Web App
         </motion.h3>
-        <Link to={`/project/contacts-crud`}>
+        <Link to={`/contacts-crud`}>
           <button 
             className='backBtn2' 
             type='button'

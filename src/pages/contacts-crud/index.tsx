@@ -1,5 +1,5 @@
 import React from 'react'
-import './Project2.css'
+import '.2.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 // @ts-ignore
@@ -167,7 +167,7 @@ export default function Project2({ scrollDir, setDetailPage }: any) {
         <h4>NodeJS </h4>
       </motion.div>
       <div className='proj2Btn'>
-      <Link to={`/project/contacts-crud+`}>
+      <Link to={`/contacts-crud+`}>
         <motion.button 
           variants={btnAni}
           initial={"hidden"}
@@ -195,7 +195,7 @@ export default function Project2({ scrollDir, setDetailPage }: any) {
       >
         Web App
       </motion.h3>
-      <Link to={`/project/contacts-crud+`}>
+      <Link to={`/contacts-crud+`}>
         <motion.img 
           variants={ssAni}
           initial={"hidden"} 

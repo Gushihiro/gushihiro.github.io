@@ -1,5 +1,5 @@
 import React from 'react'
-import './Project1.css'
+import '.1.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 // @ts-ignore
@@ -171,7 +171,7 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
       >
         Web App
       </motion.h3>
-      <Link to={`/project/kinetik+`}>
+      <Link to={`/kinetik+`}>
         <motion.img 
           key={8}
           variants={ssAni}
@@ -185,7 +185,7 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
         />
       </Link>
       <div className='proj1Btn'>
-        <Link to={`/project/kinetik+`}>
+        <Link to={`/kinetik+`}>
           <motion.button
             key={10}
             variants={btnAni}

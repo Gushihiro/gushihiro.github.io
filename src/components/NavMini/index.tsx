@@ -15,19 +15,19 @@ export default function NavMini({ setFrameIdx, frameIdx, detailPage }: any) {
         history.push('/');
         break;
       case 1:
-        history.push('/project/about');
+        history.push('/about');
         break;
       case 2:
-        history.push('/project/kinetik')
+        history.push('/kinetik')
         break;
       case 3:
-        history.push('/project/contacts-crud');
+        history.push('/contacts-crud');
         break;
       case 4:
-        history.push('/project/ouicircles');
+        history.push('/ouicircles');
         break;
       case 5:
-        history.push('/project/vedomy');
+        history.push('/vedomy');
         break;
       default:
         return
@@ -52,7 +52,7 @@ useEffect(() => {
           <div className={frameIdx === 0? 'navLinkActive':'navLink'}/>
         </div>
       </Link>
-      <Link to={'/project/about'}>
+      <Link to={'/about'}>
         <div
           key={20}
           className='navCont'
@@ -64,7 +64,7 @@ useEffect(() => {
           <div className={frameIdx === 1? 'navLinkActive':'navLink'} />
         </div>
       </Link>
-      <Link to={'/project/kinetik'}>
+      <Link to={'/kinetik'}>
         <div
           key={30}
           className='navCont'
@@ -76,7 +76,7 @@ useEffect(() => {
           <div className={frameIdx === 2? 'navLinkActive':'navLink'} />
         </div>
       </Link>
-      <Link to={'/project/contacts-crud'}>
+      <Link to={'/contacts-crud'}>
         <div
           key={40}
           className='navCont'
@@ -88,7 +88,7 @@ useEffect(() => {
           <div className={frameIdx === 3? 'navLinkActive':'navLink'} />
         </div>
       </Link>
-      <Link to={'/project/ouicircles'}>
+      <Link to={'/ouicircles'}>
         <div
           key={50}
           className='navCont'
@@ -100,7 +100,7 @@ useEffect(() => {
           <div className={frameIdx === 4? 'navLinkActive':'navLink'} />
         </div>
       </Link>
-      <Link to={'/project/vedomy'}>
+      <Link to={'/vedomy'}>
         <div
           key={60}
           className='navCont'

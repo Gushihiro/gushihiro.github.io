@@ -172,7 +172,7 @@ const KinetikPage = ({ setDetailPage }:any) => {
         >
           Web App
         </motion.h3>
-        <Link to={`/project/kinetik`}>
+        <Link to={`/kinetik`}>
           <button
             className='backBtn' 
             type='button'

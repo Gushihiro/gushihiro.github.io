@@ -1,5 +1,5 @@
 import React from 'react'
-import './Project4.css'
+import '.4.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 // @ts-ignore
@@ -169,7 +169,7 @@ export default function Project4({ scrollDir, setDetailPage }: any) {
         <h4>NodeJS</h4>
       </motion.div>
       <div className='proj4Btn'>
-        <Link to={`/project/vedomy+`}>
+        <Link to={`/vedomy+`}>
           <motion.button 
             variants={btnAni}
             initial={"hidden"}
@@ -199,7 +199,7 @@ export default function Project4({ scrollDir, setDetailPage }: any) {
       >
         Web App
       </motion.h3>
-      <Link to={`/project/vedomy+`}>
+      <Link to={`/vedomy+`}>
         <motion.img 
           variants={ssAni}
           initial={"hidden"} 
