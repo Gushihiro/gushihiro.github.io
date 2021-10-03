@@ -36,6 +36,9 @@
 }
 
 @media screen and  (max-width: 450px) {
+  .header {
+    min-height: 90vh;
+  }
   .spacer {
     height: 10%;
   }
