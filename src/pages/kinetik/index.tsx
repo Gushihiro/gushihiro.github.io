@@ -1,5 +1,5 @@
 import React from 'react'
-import '.1.css'
+import './Project1.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 // @ts-ignore

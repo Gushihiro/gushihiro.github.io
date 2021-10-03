@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import '.3.css'
+import './Project3.css'
 // @ts-ignore
 import ScreenShot from '../../images/ouicirclesscreenshot.png'
 
