@@ -8,7 +8,6 @@ import './Vedomy.css'
 import DesktopView from '../../images/vedomyView.png'
 // @ts-ignore
 import ScreenShotPage from '../../images/vedomySSpage.png'
-import Footer from '../../components/Footer'
 const VedomyPage = ({ setDetailPage }:any) => {
 
   const h1Ani = {
