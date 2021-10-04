@@ -9,7 +9,7 @@ import frontImg from '../../images/kinetic-logo.png'
 export default function Project1({ scrollDir, setDetailPage }: any) {
 
   useEffect(() => {
-    document.body.style.overflowY = 'scroll'
+    document.body.style.overflowY = 'hidden'
   },[])
 
   const h1Ani = {
