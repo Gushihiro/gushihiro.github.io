@@ -94,7 +94,7 @@ const AboutMePage = ({ setDetailPage }:any) => {
       <h1 className='aboutTitle'>About Me Page</h1>
       <div className='aboutInfo'>
         <p>
-          I'm Hiroto Robinson, a certified Full-Stack Web Developer with a passion for learning and a love for solving puzzles.
+          TI'm Hiroto Robinson, a certified Full-Stack Web Developer with a passion for learning and a love for solving puzzles.
         </p>
         <p>
           I'm always searching for ways to improve, continue to develop skills, and obtain new knowledge in every facet of my life.
