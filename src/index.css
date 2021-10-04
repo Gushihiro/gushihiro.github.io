@@ -100,4 +100,8 @@ html {
   color: white;
 }
 
-
+@media screen and (max-width: 450px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
