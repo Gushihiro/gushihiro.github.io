@@ -156,22 +156,6 @@ const KinetikPage = ({ setDetailPage }:any) => {
       className='kinetikPage'
     >
       <div className='project proj1'>
-        <motion.h1
-          variants={h1Ani}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-        >
-          Kinetik
-        </motion.h1>
-        <motion.h3
-          variants={h3Ani}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-        >
-          Web App
-        </motion.h3>
         <Link to={`/kinetik`}>
           <button
             className='backBtn' 
@@ -192,7 +176,29 @@ const KinetikPage = ({ setDetailPage }:any) => {
             alt='Kinetik' 
           />
         </Link>
-        
+        <motion.div
+          key={6}
+          variants={h1Ani}
+          initial={"hidden"}
+          animate={"visible"}
+          exit={"exit"}
+          className='headingCont'
+        >
+          <h1>
+            Kinetik
+          </h1>
+        </motion.div>
+        <div className='typeCont'>
+          <motion.h3
+            key={7}
+            variants={h3Ani}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"}
+          >
+            Web App
+          </motion.h3>
+        </div>
         <div className='kinetik1Btn'>
           <Link to={`http://kinetikapp.herokuapp.com/`} target='_blank'>
             <motion.button
