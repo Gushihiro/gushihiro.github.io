@@ -101,9 +101,17 @@ html {
 }
 
 @media screen and (max-width: 450px) {
-  html, body {margin: 0; height: 100%; overflow: hidden}
-  body > div {
-    overflow-x:hidden;
-    overflow-y: auto;
+  html {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  body {
+    height: 100%;
+    position: fixed;
+    /* prevent overscroll bounce*/
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    /* iOS velocity scrolling */
   }
 }
