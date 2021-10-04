@@ -10,7 +10,7 @@
   font-size: 1.75rem;
   color: white;
   scroll-behavior: auto;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .backBtn {
