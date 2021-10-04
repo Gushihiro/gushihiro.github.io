@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Project3.css'
@@ -6,6 +6,10 @@ import './Project3.css'
 import ScreenShot from '../../images/ouicirclesscreenshot.png'
 
 export default function Project3({ scrollDir, setDetailPage }: any) {
+
+  useEffect(() => {
+    document.body.style.overflowY = 'hidden'
+  },[])
 
   const h1Ani = {
     visible: {

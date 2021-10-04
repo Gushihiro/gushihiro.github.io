@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 // @ts-ignore
@@ -10,6 +11,10 @@ import DesktopView from '../../images/crudView.png'
 import ScreenShotPage from '../../images/crudSSpage.png'
 import Footer from '../../components/Footer'
 const ContactCrudPage = ({ setDetailPage }:any) => {
+
+  useEffect(() => {
+    document.body.style.overflowY = 'scroll'
+  },[])
 
   const h1Ani = {
     visible: {

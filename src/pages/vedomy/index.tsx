@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from 'react'
 import './Project4.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
@@ -7,6 +7,10 @@ import ScreenShot from '../../images/vedomyscreenshot.png'
 import NavMini from '../../components/NavMini'
 
 export default function Project4({ scrollDir, setDetailPage }: any) {
+
+  useEffect(() => {
+    document.body.style.overflowY = 'hidden'
+  },[])
 
   const h1Ani = {
     visible: {
