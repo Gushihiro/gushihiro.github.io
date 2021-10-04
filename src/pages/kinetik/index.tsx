@@ -153,24 +153,6 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
       className='project proj1' 
       id='kinetik'
     >
-      <motion.h1 
-        key={6}
-        variants={h1Ani}
-        initial={"hidden"}
-        animate={"visible"}
-        exit={"exit"}
-      >
-        Kinetik
-      </motion.h1>
-      <motion.h3
-        key={7}
-        variants={h3Ani}
-        initial={"hidden"}
-        animate={"visible"}
-        exit={"exit"}
-      >
-        Web App
-      </motion.h3>
       <Link to={`/kinetik+`}>
         <motion.img 
           key={8}
@@ -184,6 +166,29 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
           onClick={()=>setDetailPage(true)}
         />
       </Link>
+      <motion.div
+        key={6}
+        variants={h1Ani}
+        initial={"hidden"}
+        animate={"visible"}
+        exit={"exit"}
+        className='headingCont'
+      >
+        <h1>
+          Kinetik
+        </h1>
+      </motion.div>
+      <div className='typeCont'>
+        <motion.h3
+          key={7}
+          variants={h3Ani}
+          initial={"hidden"}
+          animate={"visible"}
+          exit={"exit"}
+        >
+          Web App
+        </motion.h3>
+      </div>
       <div className='proj1Btn'>
         <Link to={`/kinetik+`}>
           <motion.button

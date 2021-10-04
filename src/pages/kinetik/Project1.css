@@ -12,21 +12,19 @@
   font-family: 'LemonMilk-Reg';
   padding: .5rem;
   background-color: black;
-  position: absolute;
-  top: 30%;
-  left: 10%;
+}
+
+.headingCont {
+  background-color: black;
   border-radius:10px;
   z-index: 10;
 }
 
 .proj1 h3 {
-  position: absolute;
   background-color: black;
   padding: .5rem;
   border-radius: 10px;
   font-family: 'LGCafe';
-  top: 60%;
-  left: 55%;
   font-size: 2.5rem;
 }
 
@@ -91,19 +89,27 @@
     justify-content: center;
     padding: 0;
     width: 100vw;
+    height: 95vh;
   }
+  .headingCont {
+    margin-top: -10vh;
+    width: 100vw;
+    background-color: black;
+  }
+
   .proj1 h1 {
     padding: .5rem;
-    top: 45%;
-    left: 0%;
     border-radius:10px;
-    width: 96vw;
   }
+
+  .typeCont {
+    width: 95vw;
+    display: flex;
+    margin-top: -15vh;
+  }
+
   .proj1 h3 {
-    top: 39%;
-    left: 3%;
     font-size: 2rem;
-    height: 4rem;
   }
   .kinetikSS {
     margin-top: 5vh;
