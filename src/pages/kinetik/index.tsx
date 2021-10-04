@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from 'react'
 import './Project1.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
@@ -7,6 +7,10 @@ import ScreenShot from '../../images/kinetikSS.png'
 // @ts-ignore
 import frontImg from '../../images/kinetic-logo.png'
 export default function Project1({ scrollDir, setDetailPage }: any) {
+
+  useEffect(() => {
+    document.body.style.overflowY = 'scroll'
+  },[])
 
   const h1Ani = {
     visible: {

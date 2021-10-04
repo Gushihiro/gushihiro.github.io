@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 // @ts-ignore
@@ -21,6 +22,10 @@ import Footer from '../../components/Footer'
 
 
 const KinetikPage = ({ setDetailPage }:any) => {
+  
+  useEffect(() => {
+    document.body.style.overflowY = 'scroll'
+  },[])
 
   const h1Ani = {
     visible: {
