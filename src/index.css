@@ -101,5 +101,5 @@ html {
 }
 
 @media screen and (max-width: 450px) {
-  html {margin: 0; height: 100%; overflow: hidden}
+  html, .mainPage {margin: 0; height: 100%; overflow: hidden}
 }
