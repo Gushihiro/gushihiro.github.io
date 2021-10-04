@@ -80,6 +80,7 @@ const IndexPage = () => {
         initial={{ opacity: 0}}
         transition={{ duration: 1.1 }} 
         className='mainPage'
+        id='mainPageX'
       >
         <ComponentCarousel 
           setFrameIdx={setFrameIdx}
