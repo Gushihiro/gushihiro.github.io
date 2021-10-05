@@ -56,7 +56,7 @@ const IndexPage = () => {
     <Router>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Portfolio | React</title>
+      <title>Portfolio | Hiro</title>
       <meta
         property='og:image' 
         content='https://i.gyazo.com/1adddc1f6639866f4b08c1e3e5ce58d6.png'
