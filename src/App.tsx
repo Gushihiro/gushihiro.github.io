@@ -75,7 +75,7 @@ const IndexPage = () => {
       />
       <meta
         property='og:url' 
-        content='https://gushihiro.me'
+        content='gushihiro.me'
       />
       <meta
         property='og:description'
