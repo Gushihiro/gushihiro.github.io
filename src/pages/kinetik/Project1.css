@@ -1,11 +1,13 @@
 
 .proj1 {
-  padding-left: 20vw;
+  width: 70vw;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: black;
   position: relative;
+  padding-top: 10vh;
 }
 
 .proj1 h1 {
@@ -14,16 +16,32 @@
   background-color: black;
 }
 
-.mainTitleCont {
+.typeCont {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+  margin-top: -30vh;
+  width: 40vw;
 }
 
 .headingCont {
   background-color: black;
   border-radius:10px;
+  
+}
+
+.mainInfoCont {
+  width: 70vw;
+  height: 30vh;
+  background-color: black;
   z-index: 10;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20vh;
 }
 
 .proj1 h3 {
@@ -34,13 +52,8 @@
   font-size: 2.5rem;
 }
 
-.typeCont {
-  display: flex;
-  width: 90vw;
-}
-
 .kinetikSS {
-  width: 50vw;
+  width: 40vw;
   height: 70vh;
   border-radius: 10px;
   cursor: pointer;
@@ -49,27 +62,20 @@
 .proj1Info {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  margin-left: 1vw;
-  padding-top: 10vh;
-  width: 50vw;
+  justify-content: space-between;
+  align-items: center;
+  width: 35vw;
   height: 10vh;
-  position: absolute;
-  top: 76%;
-  left: 22%;
 }
 
 .proj1Info h4 {
   font-family: 'LGCafe';
-  margin-left: 2vw;
   color: white;
 }
 
 .proj1Btn {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-  height: 30vh;
   justify-content: space-between;
 }
 .btn {
@@ -99,11 +105,17 @@
     flex-direction: column;
     justify-content: center;
     padding: 0;
+    padding-top: 10vh;
     width: 100vw;
   }
 
-  .mainTitleCont {
-    margin-top: -15vh;
+  .mainInfoCont {
+    margin-top: 0;
+    width: 100vw;
+  }
+
+  .typeCont {
+    width: 90vw;
   }
 
   .headingCont {
@@ -112,7 +124,6 @@
   }
 
   .proj1 h1 {
-    padding: .5rem;
     border-radius:10px;
   }
 
@@ -122,16 +133,13 @@
     font-size: 2rem;
   }
   .kinetikSS {
-    margin-top: 5vh;
     width: 90vw;
-    height: 40vh;
+    height: 50vh;
+    z-index: -10;
   }
   .proj1Info {
-    margin-left: 0;
-    position: static;
-    justify-content: center;
-    align-items: center;
     width: 90vw;
+    align-items: center;
   }
   .proj1Info h4 {
     font-size: 1.25rem;
@@ -143,7 +151,6 @@
   }
   .proj1Btn {
     margin: 0;
-    margin-top: 8vh;
     justify-content: flex-start;
     height: 5vh;
   }
