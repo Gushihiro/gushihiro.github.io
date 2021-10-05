@@ -24,10 +24,9 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
       opacity: 0
     },
     exit: {
-      y: -100,
       transition: {
-        duration: 1,
-        delay: 1.5
+        duration: .5,
+        delay: 1
       }
     }
   }
@@ -47,7 +46,6 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
     },
     exit: {
       y: 100,
-      opacity: 0,
       transition: {
         duration: 1,
       }
@@ -91,7 +89,7 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
     exit: {
       opacity: 0,
       transition: {
-        duration: 1.3
+        duration: 1
       }
     }
   }
@@ -123,8 +121,8 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
       y: '40%',
       opacity: 0,
       transition: {
-        duration: 1.5,
-        delay: .5
+        duration: 1,
+        delay: 1.25
       }
     }
   }
@@ -137,8 +135,8 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
       y: '-40%',
       opacity: 0,
       transition: {
-        duration: 1.5,
-        delay: .5
+        duration: 1,
+        delay: 1.25
       }
     }
   }
