@@ -2,7 +2,7 @@ import * as React from 'react'
 import { BrowserRouter as Router, useHistory } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-
+import { Helmet } from 'react-helmet'
 // Components
 import ComponentCarousel from './components/ComponentCarousel'
 import NavMini from './components/NavMini'
@@ -54,6 +54,38 @@ const IndexPage = () => {
 
   return (
     <Router>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Portfolio | React</title>
+      <meta
+        property='og:image' 
+        content='https://i.gyazo.com/1adddc1f6639866f4b08c1e3e5ce58d6.png'
+      />
+      <meta
+        property='og:title'
+        content='Portfolio | Hiro'
+      />
+      <meta
+        property='og:site_name'
+        content='Gushihiro'
+      />
+      <meta
+        property='og:type'
+        content='website'
+      />
+      <meta
+        property='og:url' 
+        content='https://gushihiro.me'
+      />
+      <meta
+        property='og:description'
+        content="My current Portfolio"
+      />
+      <meta
+        name="description"
+        content="My current Portfolio"
+      />
+    </Helmet>
     <AnimatePresence
       exitBeforeEnter
     >
