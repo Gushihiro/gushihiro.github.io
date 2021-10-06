@@ -83,7 +83,7 @@
 .btn {
   width: 15rem;
   height: clamp(2rem, 6vh, 4rem);
-  border-top-left-radius: 50px;
+  border-top-left-radius: 0px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
@@ -93,13 +93,14 @@
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
-  transition: .2s;
+  transition: .5s;
 }
 
 .btn:hover {
-  box-shadow: 0 0px 5px white, inset 0 0 5px white;
+  box-shadow: 0 0px 2px white, inset 0 0 2px white;
   transform: scale(1.05);
-  
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 0px;
 }
 
 @media screen and (max-width: 450px) {

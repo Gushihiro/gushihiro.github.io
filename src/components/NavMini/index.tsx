@@ -38,8 +38,8 @@ useEffect(() => {
   scrollPage()
 }, [frameIdx])
 
-  return (
-    <motion.div className={detailPage ? 'navMiniHide':'navMini'}>
+    return (
+      <motion.div className={detailPage ? 'navMiniHide':'navMini'}>
       <Link to={'/'}>
         <div
           key={10}
@@ -48,7 +48,7 @@ useEffect(() => {
           onClick={()=> {
             setFrameIdx(0);
           }}
-        >
+          >
           <div className={frameIdx === 0? 'navLinkActive':'navLink'}/>
         </div>
       </Link>
@@ -60,7 +60,7 @@ useEffect(() => {
           onClick={()=> {
             setFrameIdx(1);
           }}
-        >
+          >
           <div className={frameIdx === 1? 'navLinkActive':'navLink'} />
         </div>
       </Link>
@@ -72,7 +72,7 @@ useEffect(() => {
           onClick={()=> {
             setFrameIdx(2);
           }}
-        >
+          >
           <div className={frameIdx === 2? 'navLinkActive':'navLink'} />
         </div>
       </Link>
@@ -84,7 +84,7 @@ useEffect(() => {
           onClick={()=> {
             setFrameIdx(3);
           }}
-        >
+          >
           <div className={frameIdx === 3? 'navLinkActive':'navLink'} />
         </div>
       </Link>
@@ -96,7 +96,7 @@ useEffect(() => {
           onClick={()=> {
             setFrameIdx(4);
           }}
-        >
+          >
           <div className={frameIdx === 4? 'navLinkActive':'navLink'} />
         </div>
       </Link>
@@ -108,10 +108,11 @@ useEffect(() => {
           onClick={()=> {
             setFrameIdx(5);
           }}
-        >
+          >
           <div className={frameIdx === 5? 'navLinkActive':'navLink'} />
         </div>
       </Link>
     </motion.div>
   )
 }
+
