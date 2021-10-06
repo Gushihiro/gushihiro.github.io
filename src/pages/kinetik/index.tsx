@@ -162,17 +162,17 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
           onClick={()=>setDetailPage(true)}
         />
       </Link>
-        <div className='typeCont'>
-          <motion.h3
-            key={7}
-            variants={h3Ani}
-            initial={"hidden"}
-            animate={"visible"}
-            exit={"exit"}
-          >
-            Web App
-          </motion.h3>
-        </div>
+      <div className='typeCont'>
+        <motion.h3
+          key={7}
+          variants={h3Ani}
+          initial={"hidden"}
+          animate={"visible"}
+          exit={"exit"}
+        >
+          Web App
+        </motion.h3>
+      </div>
       <div className='mainInfoCont'>
         <motion.div
           key={6}

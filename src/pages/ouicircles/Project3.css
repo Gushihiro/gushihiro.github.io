@@ -1,37 +1,32 @@
 
 .proj3 {
-  padding-left: 20vw;
+  width: 70vw;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: black;
   position: relative;
+  padding-top: 10vh;
 }
 
 .proj3 h1 {
+  font-size: clamp(3rem, 4vw, 4rem);
   font-family: 'LemonMilk-Reg';
   padding: .5rem;
   background-color: black;
-  position: absolute;
-  top: 70%;
-  left: 9%;
-  border-radius:10px;
-  z-index: 10;
 }
 
 .proj3 h3 {
-  position: absolute;
   background-color: black;
   padding: .5rem;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
   font-family: 'LGCafe';
-  top: 55%;
-  left: 52%;
   font-size: 2.5rem;
 }
 
 .ouiSS {
-  width: 50vw;
+  width: 40vw;
   height: 70vh;
   border-radius: 10px;
   cursor: pointer;
@@ -40,27 +35,20 @@
 .proj3Info {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  margin-left: 1vw;
-  padding-top: 10vh;
-  width: 50vw;
+  justify-content: space-between;
+  align-items: center;
+  width: 35vw;
   height: 10vh;
-  position: absolute;
-  top: 76%;
-  left: 20%;
 }
 
 .proj3Info h4 {
   font-family: 'LGCafe';
-  margin-left: 2vw;
   color: white;
 }
 
 .proj3Btn {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-  height: 30vh;
   justify-content: space-between;
 }
 
@@ -69,32 +57,23 @@
     flex-direction: column;
     justify-content: center;
     padding: 0;
+    padding-top: 10vh;
     width: 100vw;
   }
   .proj3 h1 {
-    padding: .5rem;
-    top: 45%;
-    left: 0%;
     border-radius:10px;
-    width: 96vw;
   }
   .proj3 h3 {
-    top: 39%;
-    left: 3%;
     font-size: 2rem;
-    height: 4rem;
   }
   .ouiSS {
-    margin-top: 5vh;
     width: 90vw;
-    height: 40vh;
+    height: 55vh;
+    z-index: -10;
   }
   .proj3Info {
-    margin-left: 0;
-    position: static;
-    justify-content: center;
-    align-items: center;
     width: 90vw;
+    align-items: center;
   }
   .proj3Info h4 {
     font-size: 1.25rem;
@@ -102,8 +81,6 @@
   }
   .proj3Btn {
     margin: 0;
-    margin-top: 10vh;
     justify-content: flex-start;
-    height: 5vh;
   }
 }

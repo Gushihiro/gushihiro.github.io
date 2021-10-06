@@ -17,24 +17,19 @@ const VedomyPage = ({ setDetailPage }:any) => {
   
   const h1Ani = {
     visible: {
-      y: 0,
       opacity: 1,
+      y: 0,
       transition: {
-        duration: 2,
-        delay: .5
+        duration: 1.5,
       }
     },
     hidden: {
-      y: 100,
       opacity: 0
     },
     exit: {
-      y: -150,
-      scale: .7,
-      opacity: 0,
       transition: {
-        duration: 1.5,
-        delay: .5
+        duration: .5,
+        delay: 1
       }
     }
   }
@@ -44,8 +39,8 @@ const VedomyPage = ({ setDetailPage }:any) => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 1.5,
-        delay: 1.75
+        duration: 1.25,
+        delay: 1.5
       }
     },
     hidden: {
@@ -54,9 +49,8 @@ const VedomyPage = ({ setDetailPage }:any) => {
     },
     exit: {
       y: 100,
-      opacity: 0,
       transition: {
-        duration: 1
+        duration: 1,
       }
     }
   }
@@ -64,43 +58,41 @@ const VedomyPage = ({ setDetailPage }:any) => {
   const ssAni = {
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
-        duration: 1.5
+        duration: 1,
+        delay: 1
       }
     },
     hidden: {
       opacity: 0,
-      x: -100
+      y: 300
     },
     exit: {
       opacity: 0,
-      y: -50,
+      height: 0,
       transition: {
         duration: 1.5,
-        delay: .7
+        delay: .5
       }
     }
   }
 
   const stackAni = {
     visible: {
-      y: 0,
       opacity: 1,
       transition: {
         duration: 1.5,
-        delay: 1.3
+        delay: 2.5
       }
     },
     hidden: {
-      y: 100,
       opacity: 0
     },
     exit: {
-      y: 50,
       opacity: 0,
       transition: {
-        duration: 1.3
+        duration: 1
       }
     }
   }
@@ -146,63 +138,7 @@ const VedomyPage = ({ setDetailPage }:any) => {
     exit={"exit"}
       className='vedomyPage'
     >
-      <div className='project proj4'>
-        <motion.div 
-          variants={stackAni}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-          className='proj4Info'
-        >
-          <h4>MySQL </h4>
-          <h4>|</h4>
-          <h4>Express </h4>
-          <h4>|</h4>
-          <h4>JavaScript </h4>
-          <h4>|</h4>
-          <h4>NodeJS</h4>
-        </motion.div>
-        <div className='vedomy4Btn'>
-          <Link to={`https://gushihiro.github.io/Vedomy/`} target='_blank'>
-          <motion.button
-            variants={btnAni}
-            initial={"hidden"}
-            animate={"visible"}
-            exit={"exit"}
-            className='btn' 
-            type='button'
-          >
-            View Site
-          </motion.button>
-          </Link>
-          <Link to={`https://github.com/Gushihiro/Vedomy`} target='_blank'>
-          <motion.button
-            variants={btnAni}
-            initial={"hidden"}
-            animate={"visible"}
-            exit={"exit"}
-            className='btn'
-          >
-            View GitHub
-          </motion.button>
-          </Link>
-        </div>
-        <motion.h1
-          variants={h1Ani}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-        >
-          Vedomy
-        </motion.h1>
-        <motion.h3
-          variants={h3Ani}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-        >
-          Web App
-        </motion.h3>
+      <div className='project proj4'>      
         <Link to={`/vedomy`}>
           <button 
             className='backBtn2' 
@@ -223,6 +159,67 @@ const VedomyPage = ({ setDetailPage }:any) => {
             alt='Vedomy' 
           />
         </Link>
+        <div className='type2Cont'>
+        <motion.h3
+          variants={h3Ani}
+          initial={"hidden"}
+          animate={"visible"}
+          exit={"exit"}
+        >
+          Web App
+        </motion.h3>
+        </div>
+        <div className='mainInfoCont'>
+          <motion.h1
+            variants={h1Ani}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"}
+          >
+            Vedomy
+          </motion.h1>
+
+          <div className='vedomy4Btn'>
+            <Link to={`https://gushihiro.github.io/Vedomy/`} target='_blank'>
+            <motion.button
+              variants={btnAni}
+              initial={"hidden"}
+              animate={"visible"}
+              exit={"exit"}
+              className='btn' 
+              type='button'
+            >
+              View Site
+            </motion.button>
+            </Link>
+            <Link to={`https://github.com/Gushihiro/Vedomy`} target='_blank'>
+            <motion.button
+              variants={btnAni}
+              initial={"hidden"}
+              animate={"visible"}
+              exit={"exit"}
+              className='btn'
+            >
+              View GitHub
+            </motion.button>
+            </Link>
+          </div>
+          <motion.div 
+            variants={stackAni}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"}
+            className='proj4Info'
+          >
+            <h4>MySQL </h4>
+            <h4>|</h4>
+            <h4>Express </h4>
+            <h4>|</h4>
+            <h4>JavaScript </h4>
+            <h4>|</h4>
+            <h4>NodeJS</h4>
+          </motion.div>
+        </div>
       </div>
       <div className='vedomyDetail'>
         <img className='vedomyDesktop' src={DesktopView} alt='Desktop'/>

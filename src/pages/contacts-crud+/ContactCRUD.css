@@ -14,13 +14,17 @@
 }
 
 .backBtn2 {
-  position: absolute;
-  top: 10%;
-  right: 17%;
   border: none;
   background-color: transparent;
   color: white;
   cursor: pointer;
+}
+
+.crud2Btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vh;
 }
 
 .crudDetail {
@@ -28,7 +32,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 5vh;
   min-height: 200vh;
   width: 100vw;
   background-color: white;
@@ -98,6 +101,10 @@
 @media screen and (max-width: 450px) {
   .crudDetail {
     width: 98vw;
+  }
+  .crud2Btn {
+    margin: 0;
+    justify-content: space-around;
   }
   .crudDetail h1 {
     font-size: 3rem;

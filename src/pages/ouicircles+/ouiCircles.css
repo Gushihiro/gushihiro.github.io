@@ -43,9 +43,8 @@
 .circles3Btn {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-  height: 30vh;
   justify-content: space-between;
+  height: 20vh;
 }
 
 .circlesDesktop {
@@ -107,9 +106,7 @@
   }
   .circles3Btn {
     margin: 0;
-    margin-top: 10vh;
-    justify-content: flex-start;
-    height: 10vh;
+    justify-content: space-around;
   }
   .circlesDetail h1 {
     font-size: 3rem;

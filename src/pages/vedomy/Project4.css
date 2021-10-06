@@ -1,41 +1,36 @@
 .proj4 {
-  background-color: black;
+  width: 70vw;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background-color: black;
   position: relative;
-  padding-right: 20vw;
+  padding-top: 7vh;
 }
 
 .proj4 h1 {
+  font-size: clamp(3rem, 4vw, 4rem);
   font-family: 'LemonMilk-Reg';
   padding: .5rem;
   background-color: black;
-  position: absolute;
-  top: 25%;
-  right: 9%;
-  border-radius:10px;
 }
 
 .proj4 h3 {
-  position: absolute;
   background-color: black;
   padding: .5rem;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
   font-family: 'LGCafe';
-  top: 70%;
-  right: 55%;
   font-size: 2.5rem;
 }
 
 .proj4Info h4 {
   font-family: 'LGCafe';
-  margin-right: 2vw;
   color: white;
 }
 
 .vedomySS {
-  width: 50vw;
+  width: 40vw;
   height: 70vh;
   border-radius: 10px;
   cursor: pointer;
@@ -44,54 +39,40 @@
 .proj4Info {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  margin-right: 1vw;
-  padding-top: 10vh;
-  width: 50vw;
+  justify-content: space-between;
+  align-items: center;
+  width: 35vw;
   height: 10vh;
-  position: absolute;
-  top: 76%;
-  right: 9%;
 }
 
 .proj4Btn {
   display: flex;
   flex-direction: column;
-  margin-right: 15%;
-  height: 30vh;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 450px) {
   .proj4 {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     padding: 0;
+    padding-top: 10vh;
     width: 100vw;
   }
   .proj4 h1 {
-    top: 45%;
-    left: 0%;
-    width: 96vw;
-    z-index: 10;
+    border-radius:10px;
   }
   .proj4 h3 {
     font-size: 2rem;
-    top: 39%;
-    right: 3%;
-    height: 4rem;
   }
   .vedomySS {
     width: 90vw;
-    height: 40vh;
-    margin-top: 5vh;
+    height: 55vh;
+    z-index: -10;
   }
   .proj4Info {
-    margin-right: 0;
-    position: static;
-    justify-content: center;
-    align-items: center;
     width: 90vw;
+    align-items: center;
   }
   .proj4Info h4 {
     font-size: 1.25rem;
@@ -99,8 +80,6 @@
   }
   .proj4Btn {
     margin: 0;
-    margin-top: 10vh;
     justify-content: flex-start;
-    height: 5vh;
   }
 }

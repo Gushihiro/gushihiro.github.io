@@ -38,10 +38,6 @@
   src: local('Elysian-Fields'), url(./fonts/Elysian\ Fields.otf) format('opentype');
 }
 
-html {
-  scroll-snap-type: y mandatory;
-}
-
 * {
   scrollbar-width: none;
   font-family: 'LemonMilk-Light', serif;

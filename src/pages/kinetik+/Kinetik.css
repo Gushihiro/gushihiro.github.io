@@ -14,8 +14,6 @@
 }
 
 .backBtn {
-  position: absolute;
-  top: 10%;
   border: none;
   background-color: transparent;
   color: white;
@@ -27,7 +25,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 5vh;
   min-height: 200vh;
   width: 100vw;
   background-color: white;
@@ -43,9 +40,8 @@
 .kinetik1Btn {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-  height: 30vh;
   justify-content: space-between;
+  height: 15vh;
 }
 
 .kinetikDesktop {
@@ -159,14 +155,9 @@
   }
   .kinetik1Btn {
     margin: 0;
-    margin-top: 14vh;
-    justify-content: flex-start;
-    height: 10vh;
+    justify-content: space-around;
   }
-  .backBtn {
-    right: 2%;
-    top: 9%;
-  }
+
   .kinetikDetail h1 {
     font-size: 3rem;
   }

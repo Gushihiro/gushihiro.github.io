@@ -1,5 +1,6 @@
 .proj2 {
   width: 70vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +11,7 @@
 }
 
 .proj2 h1 {
+  font-size: clamp(3rem, 4vw, 4rem);
   font-family: 'LemonMilk-Reg';
   padding: .5rem;
   background-color: black;
@@ -62,43 +64,43 @@
 
 @media screen and (max-width: 450px) {
   .proj2 {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     padding: 0;
+    padding-top: 10vh;
     width: 100vw;
   }
+
   .proj2 h1 {
-    top: 45%;
-    left: 0%;
-    width: 96vw;
-    z-index: 10;
+    border-radius:10px;
   }
+
   .proj2 h3 {
     font-size: 2rem;
-    top: 39%;
-    right: 3%;
-    height: 4rem;
   }
+
+  .type2Cont {
+    width: 90vw;
+  }
+
   .crudSS {
     width: 90vw;
-    height: 40vh;
-    margin-top: 5vh;
+    height: 55vh;
+    z-index: -10;
   }
+
   .proj2Info {
-    margin-right: 0;
-    position: static;
-    justify-content: center;
-    align-items: center;
     width: 90vw;
+    align-items: center;
   }
+  
   .proj2Info h4 {
     font-size: 1.25rem;
     margin: none;
   }
+
   .proj2Btn {
     margin: 0;
-    margin-top: 15vh;
     justify-content: flex-start;
-    height: 5vh;
   }
 }

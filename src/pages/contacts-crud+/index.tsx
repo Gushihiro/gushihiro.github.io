@@ -18,24 +18,19 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
 
   const h1Ani = {
     visible: {
-      y: 0,
       opacity: 1,
+      y: 0,
       transition: {
-        duration: 2,
-        delay: .5
+        duration: 1.5,
       }
     },
     hidden: {
-      y: 100,
       opacity: 0
     },
     exit: {
-      y: -150,
-      scale: .7,
-      opacity: 0,
       transition: {
-        duration: 1.5,
-        delay: .5
+        duration: .5,
+        delay: 1
       }
     }
   }
@@ -45,8 +40,8 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 1.5,
-        delay: 1.75
+        duration: 1.25,
+        delay: 1.5
       }
     },
     hidden: {
@@ -55,9 +50,8 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
     },
     exit: {
       y: 100,
-      opacity: 0,
       transition: {
-        duration: 1
+        duration: 1,
       }
     }
   }
@@ -65,43 +59,41 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
   const ssAni = {
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
-        duration: 1.5
+        duration: 1,
+        delay: 1
       }
     },
     hidden: {
       opacity: 0,
-      x: -100
+      y: 300
     },
     exit: {
       opacity: 0,
-      y: -50,
+      height: 0,
       transition: {
         duration: 1.5,
-        delay: .7
+        delay: .5
       }
     }
   }
 
   const stackAni = {
     visible: {
-      y: 0,
       opacity: 1,
       transition: {
         duration: 1.5,
-        delay: 1.3
+        delay: 2.5
       }
     },
     hidden: {
-      y: 100,
       opacity: 0
     },
     exit: {
-      y: 50,
       opacity: 0,
       transition: {
-        duration: 1.3
+        duration: 1
       }
     }
   }
@@ -147,62 +139,6 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
       className='contactcrudPage'
     >
       <div className='project proj2'>
-        <motion.div 
-          variants={stackAni}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-          className='proj2Info'
-        >
-            <h4>MySQL </h4>
-            <h4>|</h4>
-            <h4>Express </h4>
-            <h4>|</h4>
-            <h4>React </h4>
-            <h4>|</h4>
-            <h4>NodeJS </h4>
-        </motion.div>
-        <div className='proj2Btn'>
-          <a href={`https://gushihiro.github.io/contacts-crud/`} rel="noreferrer" target='_blank'>
-            <motion.button
-              variants={btnAni}
-              initial={"hidden"}
-              animate={"visible"}
-              exit={"exit"}
-              className='btn' 
-              type='button'
-            >
-              View Site
-            </motion.button>
-          </a>
-          <a href={`https://github.com/Gushihiro/contacts-crud`} rel="noreferrer" target='_blank'>
-            <motion.button
-              variants={btnAni}
-              initial={"hidden"}
-              animate={"visible"}
-              exit={"exit"}
-              className='btn'
-            >
-              View GitHub
-            </motion.button>
-          </a>
-        </div>
-        <motion.h1
-          variants={h1Ani}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-        >
-          Contact CRUD
-        </motion.h1>
-        <motion.h3
-          variants={h3Ani}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-        >
-          Web App
-        </motion.h3>
         <Link to={`/contacts-crud`}>
           <button 
             className='backBtn2' 
@@ -223,7 +159,66 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
             alt='Contacts-CRUD' 
           />
         </a>
-        
+        <div className='type2Cont'>
+          <motion.h3
+            variants={h3Ani}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"}
+          >
+            Web App
+          </motion.h3>
+        </div>
+        <div className='mainInfoCont'>
+          <motion.h1
+            variants={h1Ani}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"}
+          >
+            Contact CRUD
+          </motion.h1>
+          <div className='crud2Btn'>
+            <a href={`https://gushihiro.github.io/contacts-crud/`} rel="noreferrer" target='_blank'>
+              <motion.button
+                variants={btnAni}
+                initial={"hidden"}
+                animate={"visible"}
+                exit={"exit"}
+                className='btn' 
+                type='button'
+              >
+                View Site
+              </motion.button>
+            </a>
+            <a href={`https://github.com/Gushihiro/contacts-crud`} rel="noreferrer" target='_blank'>
+              <motion.button
+                variants={btnAni}
+                initial={"hidden"}
+                animate={"visible"}
+                exit={"exit"}
+                className='btn'
+              >
+                View GitHub
+              </motion.button>
+            </a>
+          </div>
+          <motion.div 
+            variants={stackAni}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"}
+            className='proj2Info'
+          >
+              <h4>MySQL </h4>
+              <h4>|</h4>
+              <h4>Express </h4>
+              <h4>|</h4>
+              <h4>React </h4>
+              <h4>|</h4>
+              <h4>NodeJS </h4>
+          </motion.div>
+        </div>
       </div>
       <div className='crudDetail'>
         <img className='crudDesktop' src={DesktopView} alt='Desktop'/>
