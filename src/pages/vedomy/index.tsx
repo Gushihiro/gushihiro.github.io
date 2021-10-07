@@ -187,7 +187,7 @@ export default function Project4({ scrollDir, setDetailPage }: any) {
             initial={"hidden"}
             animate={"visible"}
             exit={"exit"}
-            className='btn' 
+            className='btn2' 
             type='button'
             onClick={()=>setDetailPage(true)}
           >

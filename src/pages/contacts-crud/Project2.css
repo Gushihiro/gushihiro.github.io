@@ -56,6 +56,29 @@
   height: 10vh;
 }
 
+.btn2 {
+  width: 15rem;
+  height: clamp(2rem, 6vh, 4rem);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 50px;
+  font-family: 'LGCafe-Bold';
+  background-color: hsla(205, 100%, 50%, 0.014);
+  border: 1px solid white;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btn2:hover {
+  box-shadow: 0 0px 2px white, inset 0 0 1px white;
+  transform: scale(1.05);
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 50px;
+}
+
 .proj2Btn {
   display: flex;
   flex-direction: column;
