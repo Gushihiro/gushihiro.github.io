@@ -1,5 +1,5 @@
 .proj4 {
-  width: 70vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,7 +68,6 @@
   .vedomySS {
     width: 90vw;
     height: 55vh;
-    z-index: -10;
   }
   .proj4Info {
     width: 90vw;

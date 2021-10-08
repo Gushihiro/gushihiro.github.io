@@ -1,5 +1,5 @@
 .proj2 {
-  width: 70vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -112,7 +112,6 @@
   .crudSS {
     width: 90vw;
     height: 55vh;
-    z-index: -10;
   }
 
   .proj2Info {

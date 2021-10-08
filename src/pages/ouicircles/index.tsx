@@ -1,6 +1,10 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+// Components
+import Footer from '../../components/FooterBody'
+
+// Style
 import './Project3.css'
 // @ts-ignore
 import ScreenShot from '../../images/ouicirclesscreenshot.png'
@@ -209,6 +213,7 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
           <h4>NodeJS </h4>
         </motion.div>
       </div>
+      <Footer />
     </motion.div>
   )
 }

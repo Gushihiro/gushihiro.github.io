@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 import './Project1.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+
+import Footer from '../../components/FooterBody'
 // @ts-ignore
 import ScreenShot from '../../images/kinetikSS.png'
 // @ts-ignore
@@ -218,6 +220,7 @@ export default function Project1({ scrollDir, setDetailPage }: any) {
           <h4>NodeJS </h4>
         </motion.div>
       </div>
+      <Footer />
     </motion.div>
   )
 }

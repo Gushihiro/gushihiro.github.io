@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 // @ts-ignore
 import ScreenShot from '../../images/vedomyscreenshot.png'
+import Footer from '../../components/FooterBody'
 import NavMini from '../../components/NavMini'
 
 export default function Project4({ scrollDir, setDetailPage }: any) {
@@ -210,6 +211,7 @@ export default function Project4({ scrollDir, setDetailPage }: any) {
         <h4>NodeJS</h4>
       </motion.div>
       </div>
+      <Footer />
     </motion.div>
   )
 }

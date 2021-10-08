@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 // @ts-ignore
 import GitHubIcon from '../../images/githubIcon.jpg'
 // @ts-ignore
@@ -14,11 +15,65 @@ import Resume from '../../docs/Hiroto_Robinson_Resume.pdf'
 import HomeIcon from '../../images/homeIcon.png'
 import './Footer.css'
 
+const footerImgAni = {
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      delay: 1
+    }
+  },
+  hidden: {
+    opacity: 0,
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      duration: 1,
+      delay: 1
+    }
+  }
+}
+
+const footerContAni = {
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      delay: 1.5
+    }
+  },
+  hidden: {
+    x: 300,
+  },
+  exit: {
+    height: 0,
+    opacity: 0,
+    transition: {
+      duration: 1,
+    }
+  }
+}
+
 
 export default function Footer() {
   return (
-    <div className='footerBodCont'>
-      <div className="footer2">
+    <motion.div
+      variants={footerImgAni}
+      initial={"hidden"}
+      animate={"visible"}
+      exit={"exit"}
+      className='footerBodCont'
+    >
+      <motion.div 
+        variants={footerContAni}
+        initial={"hidden"}
+        animate={"visible"}
+        exit={"exit"}
+        className="footer2"
+      >
         <a href={'https://github.com/Gushihiro'} rel="noreferrer" target='_blank'>
           <img className="footerImg2" src={GitHubIcon} alt="GitHub" />
         </a>
@@ -31,7 +86,7 @@ export default function Footer() {
         <Link to={Resume} target='_blank'>
           <img className="footerImg2" src={ResumeIcon} alt="Twitter" />
         </Link>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }

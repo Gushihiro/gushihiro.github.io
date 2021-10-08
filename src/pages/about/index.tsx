@@ -13,46 +13,84 @@ export default function AboutPreview({ scrollDir, setFrameIdx, setDetailPage }: 
     setDetailPage(false)
   }, [])
 
-  const ssAni = {
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 1.5
-      }
-    },
-    hidden: {
-      opacity: 0,
-      scale: .7
-    },
-    exit: {
-      opacity: 0,
-      scale: .7,
-      transition: {
-        duration: 1.5
-      }
-    }
-  }
-
-  const textAni = {
+  const h1Ani = {
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1.3,
+        duration: 1.5,
+      }
+    },
+    hidden: {
+      opacity: 0
+    },
+    exit: {
+      transition: {
+        duration: .5,
+        delay: 1
+      }
+    }
+  }
+
+  const h3Ani = {
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1.25,
+        delay: 1.5
+      }
+    },
+    hidden: {
+      y: 100,
+      opacity: 0
+    },
+    exit: {
+      y: 100,
+      transition: {
+        duration: 1,
+      }
+    }
+  }
+
+  const ssAni = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1.5,
         delay: .5
       }
     },
     hidden: {
       opacity: 0,
-      y: 100
+      y: 500
     },
     exit: {
-      scale: .7,
       opacity: 0,
-      y: -200,
+      height: 0,
       transition: {
         duration: 1.5,
+        delay: .5
+      }
+    }
+  }
+
+  const stackAni = {
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        delay: 2.5
+      }
+    },
+    hidden: {
+      opacity: 0
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        duration: .75
       }
     }
   }
@@ -82,9 +120,10 @@ export default function AboutPreview({ scrollDir, setFrameIdx, setDetailPage }: 
     },
     exit: {
       y: '40%',
+      opacity: 0,
       transition: {
-        duration: 1.5,
-        delay: .5
+        duration: 1,
+        delay: 1.25
       }
     }
   }
@@ -97,8 +136,8 @@ export default function AboutPreview({ scrollDir, setFrameIdx, setDetailPage }: 
       y: '-40%',
       opacity: 0,
       transition: {
-        duration: 1.5,
-        delay: .5
+        duration: 1,
+        delay: 1.25
       }
     }
   }
@@ -122,9 +161,10 @@ export default function AboutPreview({ scrollDir, setFrameIdx, setDetailPage }: 
         alt="VSCode"
         onClick={()=>setDetailPage(true)}
       />
+      <div className='mainAboutCont'>
       <motion.h1
         key={4}
-        variants={textAni}
+        variants={h1Ani}
         initial={"hidden"}
         animate={"visible"}
         exit={"exit"}
@@ -146,6 +186,7 @@ export default function AboutPreview({ scrollDir, setFrameIdx, setDetailPage }: 
             Learn More
           </motion.button>
         </Link>
+      </div>
       </div>
       <Footer />
     </motion.div>

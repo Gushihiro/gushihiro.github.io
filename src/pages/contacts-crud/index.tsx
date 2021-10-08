@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import './Project2.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import Footer from '../../components/FooterBody'
 // @ts-ignore
 import ScreenShot from '../../images/contactCrudSS.png'
 export default function Project2({ scrollDir, setDetailPage }: any) {
@@ -208,6 +209,7 @@ export default function Project2({ scrollDir, setDetailPage }: any) {
           <h4>NodeJS </h4>
         </motion.div>
       </div>
+      <Footer />
     </motion.div>
   )
 }
