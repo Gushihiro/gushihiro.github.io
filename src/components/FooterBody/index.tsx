@@ -20,8 +20,8 @@ const footerImgAni = {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 1,
-      delay: 1
+      duration: 1.5,
+      delay: 1.5
     }
   },
   hidden: {
@@ -31,7 +31,7 @@ const footerImgAni = {
     opacity: 0,
     transition: {
       duration: 1,
-      delay: 1
+      delay: .5
     }
   }
 }
@@ -42,7 +42,7 @@ const footerContAni = {
     opacity: 1,
     transition: {
       duration: 1.5,
-      delay: 1.5
+      delay: 2
     }
   },
   hidden: {
