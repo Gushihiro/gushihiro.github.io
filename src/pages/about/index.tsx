@@ -168,6 +168,7 @@ export default function AboutPreview({ scrollDir, setFrameIdx, setDetailPage }: 
         initial={"hidden"}
         animate={"visible"}
         exit={"exit"}
+        className={'headingCont'}
       >
         I Love Innovation, Efficiency, and Story
       </motion.h1>
