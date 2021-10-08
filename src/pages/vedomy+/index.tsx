@@ -148,17 +148,15 @@ const VedomyPage = ({ setDetailPage }:any) => {
             Back
           </button>
         </Link>
-        <Link to={`https://gushihiro.github.io/Vedomy/`} target='_blank'>
-          <motion.img
-            variants={ssAni}
-            initial={"hidden"}
-            animate={"visible"}
-            exit={"exit"}
-            className='vedomySS' 
-            src={ScreenShot} 
-            alt='Vedomy' 
-          />
-        </Link>
+        <motion.img
+          variants={ssAni}
+          initial={"hidden"}
+          animate={"visible"}
+          exit={"exit"}
+          className='vedomySS' 
+          src={ScreenShot} 
+          alt='Vedomy' 
+        />
         <div className='type2Cont'>
         <motion.h3
           variants={h3Ani}

@@ -15,6 +15,7 @@
   font-family: 'LemonMilk-Reg';
   padding: .5rem;
   background-color: black;
+  pointer-events: none;
 }
 
 .type2Cont {
@@ -25,6 +26,7 @@
   z-index: 10;
   margin-top: -30vh;
   width: 40vw;
+  pointer-events: none;
 }
 
 .proj2 h3 {
@@ -44,7 +46,6 @@
   width: 40vw;
   height: 70vh;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .proj2Info {
@@ -52,8 +53,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 35vw;
+  width: 50vw;
   height: 10vh;
+  pointer-events: none;
 }
 
 .btn2 {
@@ -70,6 +72,7 @@
   color: white;
   cursor: pointer;
   transition: .5s;
+  pointer-events: all;
 }
 
 .btn2:hover {

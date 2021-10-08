@@ -1,11 +1,17 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 // @ts-ignore
 import ScreenShot from '../../images/AboutImgSS.jpg'
+import Footer from '../../components/FooterBody'
 import './AboutPreview.css'
 
 export default function AboutPreview({ scrollDir, setFrameIdx, setDetailPage }: any) {
+
+  useEffect(() => {
+    setDetailPage(false)
+  }, [])
 
   const ssAni = {
     visible: {
@@ -105,19 +111,17 @@ export default function AboutPreview({ scrollDir, setFrameIdx, setDetailPage }: 
       className="aboutPreview" 
       id='about'
     >
-      <Link to={'/about+'}>
-        <motion.img 
-          key={3}
-          variants={ssAni}
-          initial={"hidden"}
-          animate={"visible"}
-          exit={"exit"}
-          className='aboutPreSS' 
-          src={ScreenShot} 
-          alt="VSCode"
-          onClick={()=>setDetailPage(true)}
-        />
-      </Link>
+      <motion.img 
+        key={3}
+        variants={ssAni}
+        initial={"hidden"}
+        animate={"visible"}
+        exit={"exit"}
+        className='aboutPreSS' 
+        src={ScreenShot} 
+        alt="VSCode"
+        onClick={()=>setDetailPage(true)}
+      />
       <motion.h1
         key={4}
         variants={textAni}
@@ -143,6 +147,7 @@ export default function AboutPreview({ scrollDir, setFrameIdx, setDetailPage }: 
           </motion.button>
         </Link>
       </div>
+      <Footer />
     </motion.div>
   )
 }

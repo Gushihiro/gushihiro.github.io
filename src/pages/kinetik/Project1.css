@@ -43,6 +43,7 @@
   align-items: center;
   justify-content: space-around;
   padding-bottom: 18vh;
+  pointer-events: none;
 }
 
 .proj1 h3 {
@@ -57,7 +58,6 @@
   width: 40vw;
   height: 70vh;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .proj1Info {
@@ -65,13 +65,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 35vw;
+  width: 50vw;
   height: 10vh;
+  pointer-events:none;
 }
 
 .proj1Info h4 {
   font-family: 'LGCafe';
   color: white;
+  pointer-events: none;
 }
 
 .proj1Btn {
@@ -94,6 +96,7 @@
   color: white;
   cursor: pointer;
   transition: .5s;
+  pointer-events:all;
 }
 
 .btn:hover {

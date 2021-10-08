@@ -162,17 +162,15 @@ const KinetikPage = ({ setDetailPage }:any) => {
             Back
           </button>
         </Link>
-        <Link to={`http://kinetikapp.herokuapp.com/`} target='_blank'>
-          <motion.img
-            variants={ssAni}
-            initial={"hidden"} 
-            animate={"visible"}
-            exit={"exit"}
-            className='kinetikSS' 
-            src={ScreenShot} 
-            alt='Kinetik' 
-          />
-        </Link>
+        <motion.img
+          variants={ssAni}
+          initial={"hidden"} 
+          animate={"visible"}
+          exit={"exit"}
+          className='kinetikSS' 
+          src={ScreenShot} 
+          alt='Kinetik' 
+        />
         <div className='typeCont'>
           <motion.h3
             key={7}
@@ -198,7 +196,7 @@ const KinetikPage = ({ setDetailPage }:any) => {
             </h1>
           </motion.div>
           <div className='kinetik1Btn'>
-            <Link to={`http://kinetikapp.herokuapp.com/`} target='_blank'>
+            <a href={`http://kinetikapp.herokuapp.com/`} rel='noreferrer' target='_blank'>
               <motion.button
                 variants={btnAni}
                 initial={"hidden"}
@@ -209,8 +207,8 @@ const KinetikPage = ({ setDetailPage }:any) => {
               >
                 View Site
               </motion.button>
-            </Link>
-            <Link to={`https://github.com/Gushihiro/Kinetic`} target='_blank'>
+            </a>
+            <a href={`https://github.com/Gushihiro/Kinetic`} rel='noreferrer' target='_blank'>
               <motion.button
                 variants={btnAni}
                 initial={"hidden"}
@@ -220,7 +218,7 @@ const KinetikPage = ({ setDetailPage }:any) => {
               >
                 View GitHub
               </motion.button>
-            </Link>
+            </a>
           </div>
           <motion.div 
             variants={stackAni}

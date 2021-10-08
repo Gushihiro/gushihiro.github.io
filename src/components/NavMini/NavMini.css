@@ -1,13 +1,14 @@
 .navMini {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   background-color: transparent;
   width: 5rem;
   height: 10rem;
-  top: 80%;
-  left: 2%;
+  left: 8vw;
+  bottom: 40vh;
   z-index: 2;
   scroll-behavior: smooth;
   transition-duration: 2s;

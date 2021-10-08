@@ -1,8 +1,10 @@
 import * as React from 'react'
+import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 // Components
 import Logo from '../Logo'
+import Footer from '../Footer'
 // Images
 // @ts-ignore
 import Spacer from '../../images/wavebackground2.svg'
@@ -12,6 +14,10 @@ import './Header.css'
 
 // markup
 const Header = () => {
+
+  useEffect(() => {
+    document.body.style.overflowY = 'hidden'
+  },[])
 
   const scrollAni = {
     visible: {
@@ -27,7 +33,6 @@ const Header = () => {
       y: -100,
       transition: {
         duration: 1.5,
-
       }
     },
   }
@@ -89,7 +94,7 @@ const Header = () => {
             initial={"hidden"}
             exit={"hidden"}
           >
-            //Scroll Down
+            //Scroll Down -
           </motion.p>
         </div>
         <motion.img 
@@ -100,7 +105,8 @@ const Header = () => {
           className='spacer' 
           src={Spacer} 
           alt="space" 
-        />      
+        /> 
+        <Footer />     
       </motion.div>
     )
 }

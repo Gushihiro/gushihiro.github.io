@@ -148,17 +148,15 @@ const ContactCrudPage = ({ setDetailPage }:any) => {
             Back
           </button>
         </Link>
-        <a href={`https://gushihiro.github.io/contacts-crud/`} rel='noreferrer' target='_blank'>
-          <motion.img
-            variants={ssAni}
-            initial={"hidden"} 
-            animate={"visible"}
-            exit={"exit"} 
-            className='crudSS' 
-            src={ScreenShot} 
-            alt='Contacts-CRUD' 
-          />
-        </a>
+        <motion.img
+          variants={ssAni}
+          initial={"hidden"} 
+          animate={"visible"}
+          exit={"exit"} 
+          className='crudSS' 
+          src={ScreenShot} 
+          alt='Contacts-CRUD' 
+        />
         <div className='type2Cont'>
           <motion.h3
             variants={h3Ani}

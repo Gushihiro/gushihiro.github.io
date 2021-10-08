@@ -148,17 +148,15 @@ const OuiCirclesPage = ({ setDetailPage }:any) => {
             Back
           </button>
         </Link>
-        <a href={'http://oui-circle-app.herokuapp.com/'} rel='noreferrer' target='_blank'>
-          <motion.img
-            variants={ssAni}
-            initial={"hidden"} 
-            animate={"visible"}
-            exit={"exit"} 
-            className='ouiSS' 
-            src={ScreenShot} 
-            alt='ouiCircles' 
-          />
-        </a>
+        <motion.img
+          variants={ssAni}
+          initial={"hidden"} 
+          animate={"visible"}
+          exit={"exit"} 
+          className='ouiSS' 
+          src={ScreenShot} 
+          alt='ouiCircles' 
+        />
         <div className='typeCont'>
         <motion.h3
             variants={h3Ani}

@@ -87,7 +87,8 @@ export default function Logo() {
       opacity: 0,
       x: 400,
       transition: {
-        duration: 1.5
+        duration: 1.5,
+        delay: .5
       }
     }
   }

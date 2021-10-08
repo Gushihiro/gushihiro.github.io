@@ -8,6 +8,7 @@ import ScreenShot from '../../images/ouicirclesscreenshot.png'
 export default function Project3({ scrollDir, setDetailPage }: any) {
 
   useEffect(() => {
+    setDetailPage(false)
     document.body.style.overflowY = 'hidden'
   },[])
 
@@ -56,13 +57,13 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1,
-        delay: 1
+        duration: 1.5,
+        delay: .5
       }
     },
     hidden: {
       opacity: 0,
-      y: 300
+      y: 500
     },
     exit: {
       opacity: 0,
@@ -148,18 +149,16 @@ export default function Project3({ scrollDir, setDetailPage }: any) {
       className='project proj3' 
       id='ouiCircles'
     >
-      <Link to={'/ouicircles+'}>
-        <motion.img 
-          variants={ssAni}
-          initial={"hidden"} 
-          animate={"visible"}
-          exit={"exit"}
-          className='ouiSS' 
-          src={ScreenShot} 
-          alt='ouiCircles'
-          onClick={()=>setDetailPage(true)}
-        />
-      </Link>
+      <motion.img 
+        variants={ssAni}
+        initial={"hidden"} 
+        animate={"visible"}
+        exit={"exit"}
+        className='ouiSS' 
+        src={ScreenShot} 
+        alt='ouiCircles'
+        onClick={()=>setDetailPage(true)}
+      />
       <div className='typeCont'>
         <motion.h3
           variants={h3Ani}

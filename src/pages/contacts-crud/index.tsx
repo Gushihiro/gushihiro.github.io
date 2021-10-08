@@ -7,6 +7,7 @@ import ScreenShot from '../../images/contactCrudSS.png'
 export default function Project2({ scrollDir, setDetailPage }: any) {
 
   useEffect(() => {
+    setDetailPage(false)
     document.body.style.overflowY = 'hidden'
   },[])
 
@@ -55,13 +56,13 @@ export default function Project2({ scrollDir, setDetailPage }: any) {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1,
-        delay: 1
+        duration: 1.5,
+        delay: .5
       }
     },
     hidden: {
       opacity: 0,
-      y: 300
+      y: 500
     },
     exit: {
       opacity: 0,
@@ -147,18 +148,16 @@ export default function Project2({ scrollDir, setDetailPage }: any) {
       className='project proj2' 
       id='contacts-crud'
     >
-      <Link to={`/contacts-crud+`}>
-        <motion.img 
-          variants={ssAni}
-          initial={"hidden"} 
-          animate={"visible"}
-          exit={"exit"}
-          className='crudSS' 
-          src={ScreenShot} 
-          alt='Contact CRUD' 
-          onClick={()=>setDetailPage(true)}
-        />
-      </Link>
+      <motion.img 
+        variants={ssAni}
+        initial={"hidden"} 
+        animate={"visible"}
+        exit={"exit"}
+        className='crudSS' 
+        src={ScreenShot} 
+        alt='Contact CRUD' 
+        onClick={()=>setDetailPage(true)}
+      />
       <div className='type2Cont'>
       <motion.h3
         variants={h3Ani}

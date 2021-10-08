@@ -7,6 +7,7 @@ import { Helmet } from 'react-helmet'
 import ComponentCarousel from './components/ComponentCarousel'
 import NavMini from './components/NavMini'
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
+import Footer from './components/Footer'
 
 // Images
 //@ts-ignore
@@ -18,6 +19,7 @@ import './index.css'
 // markup
 const IndexPage = () => {
 
+  const history = useHistory();
   const allFrames = [
     "Header", 
     "AboutMe", 
@@ -50,6 +52,7 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
+
   }, [frameIdx])
 
   return (

@@ -20,6 +20,7 @@
   border-radius:10px;
   position: absolute;
   bottom: 30%;
+  pointer-events: none;
 }
 
 .aboutPreview h3 {
@@ -37,7 +38,6 @@
   width: 50vw;
   height: 70vh;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .aboutBtn {

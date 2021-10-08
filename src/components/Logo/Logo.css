@@ -39,6 +39,7 @@
   width: 20%;
   height: 20%;
   position: relative;
+  z-index: 1;
 }
 
 .mainLogo {

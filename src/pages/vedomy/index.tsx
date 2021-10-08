@@ -9,6 +9,7 @@ import NavMini from '../../components/NavMini'
 export default function Project4({ scrollDir, setDetailPage }: any) {
 
   useEffect(() => {
+    setDetailPage(false)
     document.body.style.overflowY = 'hidden'
   },[])
 
@@ -57,13 +58,13 @@ export default function Project4({ scrollDir, setDetailPage }: any) {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1,
-        delay: 1
+        duration: 1.5,
+        delay: .5
       }
     },
     hidden: {
       opacity: 0,
-      y: 300
+      y: 500
     },
     exit: {
       opacity: 0,
@@ -149,18 +150,16 @@ export default function Project4({ scrollDir, setDetailPage }: any) {
       className='project proj4' 
       id='vedomy'
     >
-      <Link to={`/vedomy+`}>
-        <motion.img 
-          variants={ssAni}
-          initial={"hidden"} 
-          animate={"visible"}
-          exit={"exit"}
-          className='vedomySS' 
-          src={ScreenShot} 
-          alt='Vedomy'
-          onClick={()=>setDetailPage(true)}
-        />
-      </Link>
+      <motion.img 
+        variants={ssAni}
+        initial={"hidden"} 
+        animate={"visible"}
+        exit={"exit"}
+        className='vedomySS' 
+        src={ScreenShot} 
+        alt='Vedomy'
+        onClick={()=>setDetailPage(true)}
+      />
       <div className='type2Cont'>   
       <motion.h3
         variants={h3Ani}
