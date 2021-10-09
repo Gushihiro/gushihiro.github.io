@@ -57,6 +57,25 @@ const footerContAni = {
   }
 }
 
+const footerLinkAni = {
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      delay: 3
+    }
+  },
+  hidden: {
+    opacity: 0
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      duration: .5
+    }
+  }
+}
+
 
 export default function Footer() {
   return (
@@ -75,16 +94,48 @@ export default function Footer() {
         className="footer2"
       >
         <a href={'https://github.com/Gushihiro'} rel="noreferrer" target='_blank'>
-          <img className="footerImg2" src={GitHubIcon} alt="GitHub" />
+          <motion.img
+            variants={footerLinkAni}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"} 
+            className="footerImg2" 
+            src={GitHubIcon} 
+            alt="GitHub" 
+          />
         </a>
         <a href={'https://www.linkedin.com/in/robinsonhiroto/'} rel="noreferrer" target='_blank'>
-          <img className="footerImg2" src={LinkedinIcon} alt="linkedIn" />
+          <motion.img
+            variants={footerLinkAni}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"}  
+            className="footerImg2" 
+            src={LinkedinIcon} 
+            alt="linkedIn" 
+          />
         </a>
         <a href={'https://twitter.com/gushihiro'} rel="noreferrer" target='_blank'>
-          <img className="footerImg2" src={TwitterIcon} alt="Twitter" />
+          <motion.img
+            variants={footerLinkAni}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"}  
+            className="footerImg2" 
+            src={TwitterIcon} 
+            alt="Twitter" 
+          />
         </a>
         <Link to={Resume} target='_blank'>
-          <img className="footerImg2" src={ResumeIcon} alt="Twitter" />
+          <motion.img
+            variants={footerLinkAni}
+            initial={"hidden"}
+            animate={"visible"}
+            exit={"exit"}  
+            className="footerImg2" 
+            src={ResumeIcon} 
+            alt="Twitter" 
+          />
         </Link>
       </motion.div>
     </motion.div>
