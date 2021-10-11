@@ -97,14 +97,14 @@ const Header = () => {
             //Scroll Down -
           </motion.p>
         </div>
-        <motion.img 
+        <motion.div
           key={2}
           variants={spacerAni}
           initial={"hidden"}
           animate={"visible"}
           className='spacer' 
-          src={Spacer} 
-          alt="space" 
+          // src={Spacer} 
+          // alt="space" 
         /> 
         <Footer />     
       </motion.div>
