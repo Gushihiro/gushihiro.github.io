@@ -106,6 +106,22 @@
   border-bottom-right-radius: 0px;
 }
 
+@media screen and (max-width: 1200px) {
+
+  .mainInfoCont {
+    width: 60vw;
+  }
+
+  .kinetikSS {
+    width: 50vw;
+    height: 65vh;
+  }
+
+  .typeCont {
+    width: 50vw;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .proj1 {
     flex-direction: column;

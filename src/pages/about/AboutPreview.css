@@ -68,6 +68,19 @@
   transform: scale(1.05)
 }
 
+@media screen and (max-width: 1200px) {
+
+  .aboutPreSS {
+    height: 60vh;
+    width: 50vw;
+  }
+
+  .mainAboutCont {
+    width: 60vw;
+    margin-top: -15vh;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .mainAboutCont {
     margin-top: -5vh;

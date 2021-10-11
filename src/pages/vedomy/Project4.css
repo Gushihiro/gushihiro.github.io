@@ -51,6 +51,13 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1200px) {
+  .vedomySS {
+    width: 50vw;
+    height: 65vh;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .proj4 {
     flex-direction: column;

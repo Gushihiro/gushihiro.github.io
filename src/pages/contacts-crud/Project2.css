@@ -88,6 +88,18 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1200px) {
+
+  .type2Cont {
+    width: 50vw;
+  }
+
+  .crudSS {
+    width: 50vw;
+    height: 65vh;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .proj2 {
     flex-direction: column;
