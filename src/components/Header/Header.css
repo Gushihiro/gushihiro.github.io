@@ -54,4 +54,8 @@
     right: 10vw;
     font-size: 1rem;
   }
+
+  .header {
+    height: 95vh;
+  }
 }
