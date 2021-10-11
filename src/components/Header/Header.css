@@ -52,8 +52,8 @@
   }
   .navContent {
     margin: 0;
-    bottom: 2%;
-    right: 7%;
+    bottom: 3vh;
+    right: 10vw;
     font-size: 1rem;
   }
 }
