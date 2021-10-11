@@ -5,7 +5,6 @@
   height: 100vh;
   width: 100vw;
   background-color: rgb(0, 0, 0);
-  padding-bottom: -5vh;
 }
 
 .navContent {
@@ -19,7 +18,7 @@
   font-size: 1.15rem;
   border-radius: 5px;
   text-align:start;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   pointer-events: none;
 }
