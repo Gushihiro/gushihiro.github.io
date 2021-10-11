@@ -43,8 +43,12 @@
 }
 
 @media screen and  (max-width: 450px) {
+
+  .spacer {
+    height: 30vh;
+  }
   .header {
-    min-height: 90vh;
+    height: 100vh;
   }
   .navContent {
     margin: 0;
