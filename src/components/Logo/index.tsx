@@ -121,7 +121,7 @@ export default function Logo() {
           animate={"visible"}
           exit={"exit"}
         >
-          Software Engineer
+          Software Developer
         </motion.h3>
       </div>
       <motion.div

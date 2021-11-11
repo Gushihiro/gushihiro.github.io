@@ -91,16 +91,16 @@ const AboutMePage = ({ setDetailPage }:any) => {
       }}
       className='aboutMePage'
   >
-      <h1 className='aboutTitle'>About Me Page</h1>
+      {/* <h1 className='aboutTitle'>About Me Page</h1> */}
       <div className='aboutInfo'>
         <p>
           I'm Hiroto Robinson, a certified Full-Stack Web Developer with a passion for learning and a love for solving puzzles.
         </p>
         <p>
-          I'm always searching for ways to improve, continue to develop skills, and obtain new knowledge in every facet of my life.
+          I'm always seeking to improve my abilities and learn new skills in every facet of my life.
         </p>
         <p>
-          As a team-oriented programmer, I believe I can be an asset to any company looking for a strong, motivated developer.
+          As a team-oriented programmer, I believe I can be an asset to any company looking for a motivated developer with a strong desire to help the team and its members find success.
         </p>
         <div className='contact'>
           <h2>Contact Me @ robinsonhiroto@gmail.com</h2>
