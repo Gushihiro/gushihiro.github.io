@@ -90,8 +90,7 @@ const AboutMePage = ({ setDetailPage }:any) => {
         duration: 1.1
       }}
       className='aboutMePage'
-  >
-      {/* <h1 className='aboutTitle'>About Me Page</h1> */}
+    >
       <div className='aboutInfo'>
         <p>
           I'm Hiroto Robinson, a certified Full-Stack Web Developer with a passion for learning and a love for solving puzzles.
@@ -102,12 +101,28 @@ const AboutMePage = ({ setDetailPage }:any) => {
         <p>
           As a team-oriented programmer, I believe I can be an asset to any company looking for a motivated developer with a strong desire to help the team and its members find success.
         </p>
-        <div className='contact'>
-          <h2>Contact Me @ robinsonhiroto@gmail.com</h2>
+        <h2>Contact Me</h2>
+        <div
+          className='smNav'
+        >
+          <div 
+            className='contact'
+            onClick={() => {navigator.clipboard.writeText('robinsonhiroto@gmail.com')}}
+          >
+            <h2>robinsonhiroto</h2>
+            <h2>@gmail.com</h2>
+          </div>
+          <a 
+            className='contactLinkedIn'
+            href='https://linkedin.com/in/robinsonhiroto'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <div className='contact'>
+              <h2>LinkedIn</h2>
+            </div>
+          </a>
         </div>
-        <p>
-          
-        </p>
       </div>
       <Link to={`/about`}>
         <button 

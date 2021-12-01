@@ -34,6 +34,35 @@
   margin: 2rem;
 }
 
+.smNav {
+  width: 70vw;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 10vh;
+  border: 1px solid white;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.contact h2 {
+  font-size: 1.5rem;
+}
+
+.contactLinkedIn {
+  color: white;
+  text-decoration: none;
+}
+
 .aboutBack {
   background-color: transparent;
   color: white;
